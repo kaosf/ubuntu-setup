@@ -20,6 +20,5 @@ git clone git://github.com/sstephenson/ruby-build.git
 cd
 rbenv install 1.9.3-p125
 rbenv global 1.9.3-p125
-rbenv rehash
-gem install bundler
+gem install bundler --no-ri --no-rdoc
 rbenv rehash
