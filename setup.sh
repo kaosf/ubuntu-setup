@@ -7,7 +7,7 @@ chsh -s /usr/bin/zsh
 # login
 
 # for local install
-mkdir -p $HOME/local/src
+mkdir -p $HOME/local/{bin,src}
 
 # Ruby with rbenv + ruby-build
 #  https://github.com/sstephenson/rbenv
@@ -55,3 +55,11 @@ curl https://raw.github.com/hokaccha/nodebrew/master/nodebrew | perl - setup
 echo "export PATH=$HOME/.nodebrew/current/bin:$PATH" >> .zshenv
 nodebrew install v0.7.8
 nodebrew install v0.6.15
+
+# dmd
+cd ~/local/src
+wget https://github.com/downloads/D-Programming-Language/dmd/dmd.2.059.zip
+sudo aptitude install unzip
+unzip dmd.2.059.zip
+mv dmd2 ~/local/bin
+echo "export PATH=$HOME/local/bin/dmd2/linux/bin64:$PATH" >> ~/.zshenv
