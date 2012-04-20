@@ -6,6 +6,9 @@ chsh -s /usr/bin/zsh
 # logout
 # login
 
+# for local install
+mkdir -p $HOME/local/src
+
 # Ruby with rbenv + ruby-build
 #  https://github.com/sstephenson/rbenv
 #  https://github.com/sstephenson/ruby-build
