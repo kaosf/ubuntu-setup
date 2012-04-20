@@ -29,6 +29,7 @@ sudo aptitude install sqlite3 libsqlite3-dev
 # install Rails with Bundler and test
 echo 'source :rubygems' >> Gemfile
 echo "gem 'rails', '3.2.2'" >> Gemfile
+bundle install
 bundle exec rails new sample
 cd sample
 echo "gem 'therubyracer'" >> Gemfile
