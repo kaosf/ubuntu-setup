@@ -2,7 +2,7 @@ sudo aptitude update
 sudo aptitude safe-upgrade
 sudo aptitude install zsh vim byobu git-core curl build-essential
 chsh -s /usr/bin/zsh
-# configure or get .zshrc .vimrc .screenrc
+# configure or get .zshrc .vimrc .screenrc .gitconfig
 # logout
 # login
 
