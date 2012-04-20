@@ -63,3 +63,6 @@ sudo aptitude install unzip
 unzip dmd.2.059.zip
 mv dmd2 ~/local/bin
 echo "export PATH=$HOME/local/bin/dmd2/linux/bin64:$PATH" >> ~/.zshenv
+
+# ffmpeg
+sh install-ffmpeg.sh # ref. install-ffmpeg.sh
