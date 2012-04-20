@@ -46,3 +46,9 @@ sudo aptitude install postgresql-8.4 postgresql-server-dev-8.4
 bundle exec rails new pg_sample -d postgresql
 cd pg_sample
 bundle install
+
+# Node.js with nodebrew
+curl https://raw.github.com/hokaccha/nodebrew/master/nodebrew | perl - setup
+echo "export PATH=$HOME/.nodebrew/current/bin:$PATH" >> .zshenv
+nodebrew install v0.7.8
+nodebrew install v0.6.15
