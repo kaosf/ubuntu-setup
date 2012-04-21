@@ -42,8 +42,8 @@ bundle exec rake db:migrate
 bundle exec rake
 bundle exec rails s
 
-# install PostgreSQL
-sudo aptitude install postgresql-8.4 postgresql-server-dev-8.4
+# install and configure PostgreSQL
+# ref. install-postgresql.sh
 
 # Rails with PostgreSQL
 bundle exec rails new pg_sample -d postgresql
