@@ -104,3 +104,35 @@ echo "(public key content)" > ka@myhost
 git add .
 git commit -m "change configuration and add keys"
 git push
+
+# subversion
+sudo aptitude install subversion libapache2-svn
+sudo vim /etc/apache2/mods-enabled/dav_svn.conf
+...
++ <Location /svn>
++         DAV svn
++         SVNParentPath /var/www/svn
++         AuthType Basic
++         AuthName "Subversion Repository"
++         AuthUserFile /var/www/svn/.htpasswd
++         AuthzSVNAccessFile /var/www/svn/.svnaccess
++         Require valid-user
++ </Location>
+
+cd /var/www
+sudo mkdir svn
+sudo chown www-data:www-data svn
+sudo vim .svnaccess
++ [myrepos:/]
++ ka = rw
++ someone = r
++ * =
+
+sudo htpasswd -cm .htpasswd ka
+sudo htpasswd -m .htpasswd someone
+sudo svnadmin create myrepos
+sudo svnadmin load myrepos < dumpfile # svnadmin dump myrepos > dumpfile # on somewhere
+sudo chown -R www-data:www-data myrepos
+
+# hg
+sudo aptitude install mercurial
