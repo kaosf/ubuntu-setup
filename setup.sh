@@ -136,3 +136,10 @@ sudo chown -R www-data:www-data myrepos
 
 # hg
 sudo aptitude install mercurial
+
+# HandBrakeCLI
+# ref. https://launchpad.net/~stebbins/+archive/handbrake-releases
+sudo aptitude install python-software-properties # for "add-apt-repository"
+sudo add-apt-repository ppa:stebbins/handbrake-releases
+sudo aptitude update
+sudo aptitude install handbrake-cli
