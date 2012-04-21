@@ -143,3 +143,20 @@ sudo aptitude install python-software-properties # for "add-apt-repository"
 sudo add-apt-repository ppa:stebbins/handbrake-releases
 sudo aptitude update
 sudo aptitude install handbrake-cli
+
+# Lua
+cd $HOME/local/src
+wget http://www.lua.org/ftp/lua-5.2.0.tar.gz
+tar xzf lua-5.2.0.tar.gz
+cd lua-5.2.0
+vim Makefile
+...
+- PLAT= none
++ PLAT= linux
+...
+- INSTALL_TOP= /usr/local
++ INSTALL_TOP= /home/ka/local
+...
+
+make
+make install
