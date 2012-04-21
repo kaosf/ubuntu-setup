@@ -79,8 +79,8 @@ sudo vim /etc/apache2/site-available/default
 - 		Options Indexes FollowSymLinks MultiViews
 - 		AllowOverride None
 + 	<Directory /home/ka/www/>
-- 		Options ExecCGI Indexes FollowSymLinks MultiViews
-- 		AllowOverride All
++ 		Options ExecCGI Indexes FollowSymLinks MultiViews
++ 		AllowOverride All
 ...
 
 mkdir $HOME/www
