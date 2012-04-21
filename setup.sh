@@ -85,3 +85,22 @@ sudo vim /etc/apache2/site-available/default
 
 mkdir $HOME/www
 sudo service apache2 restart
+
+# gitosis
+sudo aptitude install gitosis
+sudo passwd gitosis # input password
+ssh-keygen # input empty all (only press enter)
+sudo -H -u gitosis gitosis-init < /home/ka/.ssh/id_rsa.pub
+git clone gitosis@localhost:gitosis-admin.git
+cd gitosis-admin
+vim gitosis.conf
+...
++ [group mygroup]
++ writable = myrepos
++ members = ka@myhost
+
+cd keydir
+echo "(public key content)" > ka@myhost
+git add .
+git commit -m "change configuration and add keys"
+git push
