@@ -160,3 +160,6 @@ vim Makefile
 
 make
 make install
+
+# Java6
+sudo aptitude install openjdk-6-jre
