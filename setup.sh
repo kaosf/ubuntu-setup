@@ -21,8 +21,8 @@ mkdir -p ~/.rbenv/plugins
 cd ~/.rbenv/plugins
 git clone git://github.com/sstephenson/ruby-build.git
 cd
-rbenv install 1.9.3-p125
-rbenv global 1.9.3-p125
+rbenv install 1.9.3-p194
+rbenv global 1.9.3-p194
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
 
