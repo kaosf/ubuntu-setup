@@ -24,4 +24,4 @@ createdb mydb_production
 psql
 # GRANT ALL PRIVILEGES ON DATABASE mydb_development TO ka;
 # GRANT ALL PRIVILEGES ON DATABASE mydb_production TO ka;
-psql mydb_production -U ka < dumpfile # pg_dump mydb_production -O ka > dumpfile # on somewhere
+psql mydb_production -U ka < dumpfile # pg_dump mydb_production -O > dumpfile # on somewhere
