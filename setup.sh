@@ -64,8 +64,9 @@ unzip dmd.2.059.zip
 mv dmd2 ~/local/bin
 echo "export PATH=$HOME/local/bin/dmd2/linux/bin64:$PATH" >> ~/.zshenv
 
-# ffmpeg
-sh install-ffmpeg.sh # ref. install-ffmpeg.sh
+# FFmpeg
+# ref. install-ffmpeg-10.04.sh or
+#      install-ffmpeg-12.04.sh
 
 # Apache2
 sudo aptitude install apache2
