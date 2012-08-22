@@ -168,3 +168,6 @@ sudo aptitude install openjdk-6-jre
 # to install nokogiri
 sudo aptitude install libxslt-dev libxml2-dev
 gem install nokogiri
+
+# samba
+sudo aptitude install smbfs
