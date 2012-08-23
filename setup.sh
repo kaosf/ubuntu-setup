@@ -52,9 +52,10 @@ bundle install
 
 # Node.js with nodebrew
 curl https://raw.github.com/hokaccha/nodebrew/master/nodebrew | perl - setup
-echo "export PATH=$HOME/.nodebrew/current/bin:$PATH" >> .zshenv
-nodebrew install v0.7.8
-nodebrew install v0.6.15
+echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> .zshenv
+nodebrew install v0.8.8
+ln -s $HOME/.nodebrew/node/v0.8.8/bin/ $HOME/local/bin/node-bin
+echo 'export PATH=$HOME/local/bin/node-bin:$PATH' >> .zshenv
 
 # dmd
 cd ~/local/src
