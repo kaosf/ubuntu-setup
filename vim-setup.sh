@@ -31,3 +31,6 @@ git clone git://github.com/gkz/vim-ls.git
 # titanium-vim
 #  ref. http://d.hatena.ne.jp/gabuchan/20110930/1317374566
 git clone https://github.com/pekepeke/titanium-vim.git
+# neco-ruby-keyword-args
+#  ref. http://qiita.com/items/b8dd37efa64a9054c048
+git clone git://github.com/rhysd/neco-ruby-keyword-args.git
