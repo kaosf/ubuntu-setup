@@ -16,7 +16,7 @@ sudo aptitude install zlib1g-dev libssl-dev libreadline6-dev
 git clone git://github.com/sstephenson/rbenv.git .rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshenv
 echo 'eval "$(rbenv init -)"' >> ~/.zshenv
-exec $SHELL
+exec $SHELL -l
 mkdir -p ~/.rbenv/plugins
 cd ~/.rbenv/plugins
 git clone git://github.com/sstephenson/ruby-build.git
