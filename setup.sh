@@ -165,7 +165,9 @@ make
 make install
 
 # Java6
-sudo aptitude install openjdk-6-jre
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java6-installer
 
 # to install nokogiri
 sudo aptitude install libxslt-dev libxml2-dev
