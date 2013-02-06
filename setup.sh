@@ -7,7 +7,8 @@ chsh -s /usr/bin/zsh
 # login
 
 # for local install
-mkdir -p $HOME/local/{bin,src}
+mkdir -p $HOME/local/src
+mkdir -p $HOME/local/bin
 
 # Ruby with rbenv + ruby-build
 #  https://github.com/sstephenson/rbenv
