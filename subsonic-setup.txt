@@ -1,0 +1,20 @@
+# download subsonic package
+sudo dpkg -i subsonic-4.7.deb
+sudo a2enmode proxy_http
+sudo vim /etc/apache2/sites-available/subsonic.kaosfield.net
+...
++ <VirtualHost *:80>
++   ServerName subsonic.kaosfield.net
++
++   ProxyRequests Off
++   <Proxy *>
++     Order deny,allow
++     Allow from all
++   </Proxy>
++
++   ProxyPass / http://localhost:4040/
++   ProxyPassReverse / http://localhost:4040/
++ </VirtualHost>
+...
+
+sudo a2ensite subsonic.kaosfield.net
