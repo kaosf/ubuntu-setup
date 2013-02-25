@@ -11,3 +11,6 @@ echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" | 
 
 sudo aptitude update
 sudo aptitude install mongodb-10gen
+
+# ref. http://te2u.hatenablog.jp/entry/2013/02/06/222342
+echo "smallfiles = true" | sudo tee -a /etc/mongodb.conf
