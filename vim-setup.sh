@@ -35,3 +35,6 @@ git clone https://github.com/pekepeke/titanium-vim.git --depth 1
 # neco-ruby-keyword-args
 #  ref. http://qiita.com/items/b8dd37efa64a9054c048
 git clone git://github.com/rhysd/neco-ruby-keyword-args.git --depth 1
+# jade-vim
+#  ref. https://github.com/digitaltoad/vim-jade
+git clone https://github.com/digitaltoad/vim-jade.git --depth 1
