@@ -38,3 +38,6 @@ git clone git://github.com/rhysd/neco-ruby-keyword-args.git --depth 1
 # jade-vim
 #  ref. https://github.com/digitaltoad/vim-jade
 git clone https://github.com/digitaltoad/vim-jade.git --depth 1
+# typescript-vim
+#  ref. https://github.com/leafgarland/typescript-vim
+git clone https://github.com/leafgarland/typescript-vim.git --depth 1
