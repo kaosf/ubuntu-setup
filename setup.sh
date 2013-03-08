@@ -132,3 +132,8 @@ gem install nokogiri
 
 # samba
 sudo aptitude install smbfs
+
+# install "ctags"
+sudo aptitude install exuberant-ctags
+# can't install by "sudo aptitude install ctags"
+# "ctags" is a virtual package provided by: exuberant-ctags:i386 exuberant-ctags

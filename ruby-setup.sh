@@ -15,3 +15,9 @@ rbenv install 1.9.3-p374
 rbenv global 1.9.3-p374
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
+
+# setup ctags
+# ref. http://qiita.com/items/4398a19c05ad4861af85
+# install "ctags" before executing the following command
+git clone https://github.com/taichouchou2/rbenv-ctags.git ~/.rbenv/plugins/rbenv-ctags
+rbenv ctags
