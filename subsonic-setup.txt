@@ -1,6 +1,6 @@
 # download subsonic package
 sudo dpkg -i subsonic-4.7.deb
-sudo a2enmode proxy_http
+sudo a2enmod proxy_http
 sudo vim /etc/apache2/sites-available/subsonic.kaosfield.net
 ...
 + <VirtualHost *:80>
