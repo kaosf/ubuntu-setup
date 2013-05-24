@@ -4,7 +4,7 @@
 
 git clone https://github.com/stedolan/jq.git
 cd jq
-autoconf
+autoreconf
 ./configure --prefix=$HOME/local
 make
 make install
