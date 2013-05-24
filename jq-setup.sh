@@ -9,5 +9,8 @@ autoreconf
 make
 make install
 
-# `flex` package is needed before make
+# `flex` package is needed for make
 sudo aptitude install flex
+# `yacc` command is needed for make
+# ref. http://diaryrnsit.blogspot.jp/2012/10/how-to-install-lex-in-ubuntu-12.html
+sudo aptitude install bison
