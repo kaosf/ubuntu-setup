@@ -6,11 +6,10 @@ git clone https://github.com/stedolan/jq.git
 cd jq
 autoreconf
 ./configure --prefix=$HOME/local
+
+# `flex` package and `yacc` command are needed for make
+# ref. http://diaryrnsit.blogspot.jp/2012/10/how-to-install-lex-in-ubuntu-12.html
+sudo aptitude install flex bison
+
 make
 make install
-
-# `flex` package is needed for make
-sudo aptitude install flex
-# `yacc` command is needed for make
-# ref. http://diaryrnsit.blogspot.jp/2012/10/how-to-install-lex-in-ubuntu-12.html
-sudo aptitude install bison
