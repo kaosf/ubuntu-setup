@@ -3,12 +3,12 @@
 #   https://github.com/sstephenson/rbenv
 #   https://github.com/sstephenson/ruby-build
 sudo aptitude install zlib1g-dev libssl-dev libreadline6-dev
-git clone git://github.com/sstephenson/rbenv.git .rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshenv
-echo 'eval "$(rbenv init -)"' >> ~/.zshenv
+git clone git://github.com/sstephenson/rbenv.git $HOME/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $HOME/.zshenv
+echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv
 exec $SHELL -l
-mkdir -p ~/.rbenv/plugins
-cd ~/.rbenv/plugins
+mkdir -p $HOME/.rbenv/plugins
+cd $HOME/.rbenv/plugins
 git clone git://github.com/sstephenson/ruby-build.git
 cd
 rbenv install 2.0.0-p195
