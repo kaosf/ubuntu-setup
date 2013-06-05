@@ -9,6 +9,7 @@ chsh -s /usr/bin/zsh
 # for local install
 mkdir -p $HOME/local/src
 mkdir -p $HOME/local/bin
+echo 'export PATH=$HOME/local/bin:$PATH' >> $HOME/.zshenv
 
 # install SQLite3
 sudo aptitude install sqlite3 libsqlite3-dev
