@@ -9,6 +9,7 @@ echo '[auth]'              > $HOME/.bitbucket
 echo 'username = kaosf'    >> $HOME/.bitbucket
 echo 'password = ********' >> $HOME/.bitbucket
 echo '[options]'           >> $HOME/.bitbucket
+echo 'scm = git'           >> $HOME/.bitbucket
 echo 'protocol = ssh'      >> $HOME/.bitbucket
 
 chmod $HOME/.bitbucket 600
