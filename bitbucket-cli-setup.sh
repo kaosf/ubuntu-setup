@@ -12,4 +12,4 @@ echo '[options]'           >> $HOME/.bitbucket
 echo 'scm = git'           >> $HOME/.bitbucket
 echo 'protocol = ssh'      >> $HOME/.bitbucket
 
-chmod $HOME/.bitbucket 600
+chmod 600 $HOME/.bitbucket
