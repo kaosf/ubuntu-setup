@@ -41,3 +41,6 @@ git clone https://github.com/digitaltoad/vim-jade.git --depth 1
 # typescript-vim
 #  ref. https://github.com/leafgarland/typescript-vim
 git clone https://github.com/leafgarland/typescript-vim.git --depth 1
+# Groovy
+#  ref. https://github.com/vim-scripts/groovy.vim
+git clone https://github.com/vim-scripts/groovy.vim --depth 1
