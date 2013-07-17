@@ -44,3 +44,6 @@ git clone https://github.com/leafgarland/typescript-vim.git --depth 1
 # Groovy
 #  ref. https://github.com/vim-scripts/groovy.vim
 git clone https://github.com/vim-scripts/groovy.vim --depth 1
+# Stylus
+#  ref. https://github.com/wavded/vim-stylus
+git clone https://github.com/wavded/vim-stylus --depth 1
