@@ -47,3 +47,6 @@ git clone https://github.com/vim-scripts/groovy.vim --depth 1
 # Stylus
 #  ref. https://github.com/wavded/vim-stylus
 git clone https://github.com/wavded/vim-stylus --depth 1
+# vim-quickrun
+#  ref.  https://github.com/thinca/vim-quickrun
+git clone https://github.com/thinca/vim-quickrun --depth 1
