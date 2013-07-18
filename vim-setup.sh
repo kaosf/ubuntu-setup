@@ -48,5 +48,6 @@ git clone https://github.com/vim-scripts/groovy.vim --depth 1
 #  ref. https://github.com/wavded/vim-stylus
 git clone https://github.com/wavded/vim-stylus --depth 1
 # vim-quickrun
-#  ref.  https://github.com/thinca/vim-quickrun
+#  ref. https://github.com/thinca/vim-quickrun
+#       http://d.hatena.ne.jp/osyo-manga/20130311/1363012363
 git clone https://github.com/thinca/vim-quickrun --depth 1
