@@ -1,0 +1,11 @@
+# ref. http://blog.kenjiskywalker.org/blog/2013/07/10/hisaichi-tweet/
+
+# filtering keyword
+# ref.
+#   https://github.com/jugyo/earthquake
+#   https://gist.github.com/jugyo/899506
+:plugin_install https://gist.github.com/899506
+
+# favstar
+# ref. http://d.hatena.ne.jp/hecomi/20120404/1333556123
+:plugin_install https://gist.github.com/siyo/1397366
