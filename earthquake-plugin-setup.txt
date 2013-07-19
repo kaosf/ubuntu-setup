@@ -12,3 +12,6 @@
 
 # ka-aliases
 :plugin_install https://gist.github.com/kaosf/6037788
+
+# fr
+:plugin_install https://gist.github.com/kaosf/6037824
