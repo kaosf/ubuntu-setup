@@ -1,7 +1,7 @@
 # install Node.js with nodebrew
 # ref. https://github.com/hokaccha/nodebrew
 
-curl https://raw.github.com/hokaccha/nodebrew/master/nodebrew | perl - setup
+curl -L git.io/nodebrew | perl - setup
 echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> $HOME/.zshenv
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
