@@ -6,6 +6,8 @@ chsh -s /usr/bin/zsh
 # logout
 # login
 
+touch $HOME/.zshenv && chmod 600 $HOME/.zshenv
+
 # for local install
 mkdir -p $HOME/local/src
 mkdir -p $HOME/local/bin
