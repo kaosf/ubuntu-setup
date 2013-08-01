@@ -51,3 +51,6 @@ git clone https://github.com/wavded/vim-stylus --depth 1
 #  ref. https://github.com/thinca/vim-quickrun
 #       http://d.hatena.ne.jp/osyo-manga/20130311/1363012363
 git clone https://github.com/thinca/vim-quickrun --depth 1
+# markdown_quote_syntax
+# ref. https://github.com/joker1007/markdown_quote_syntax
+git clone https://github.com/joker1007/markdown_quote_syntax --depth 1
