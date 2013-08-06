@@ -54,3 +54,7 @@ git clone https://github.com/thinca/vim-quickrun --depth 1
 # vim-markdown-quote-syntax
 # ref. https://github.com/joker1007/vim-markdown-quote-syntax
 git clone https://github.com/joker1007/vim-markdown-quote-syntax --depth 1
+# vim-ft-clojure
+# ref. http://d.hatena.ne.jp/thinca/20120915/1347696749
+#      https://github.com/thinca/vim-ft-clojure
+git clone https://github.com/thinca/vim-ft-clojure --depth 1
