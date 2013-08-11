@@ -58,3 +58,6 @@ git clone https://github.com/joker1007/vim-markdown-quote-syntax --depth 1
 # ref. http://d.hatena.ne.jp/thinca/20120915/1347696749
 #      https://github.com/thinca/vim-ft-clojure
 git clone https://github.com/thinca/vim-ft-clojure --depth 1
+# vim-indent-guides
+# ref. https://github.com/nathanaelkane/vim-indent-guides
+git clone https://github.com/nathanaelkane/vim-indent-guides --depth 1
