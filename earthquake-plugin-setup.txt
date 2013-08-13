@@ -15,3 +15,6 @@
 
 # fr
 :plugin_install https://gist.github.com/kaosf/6037824
+
+# autohash
+:plugin_install https://gist.github.com/kaosf/6217906
