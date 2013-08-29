@@ -113,7 +113,8 @@ sudo aptitude install libxslt-dev libxml2-dev
 gem install nokogiri
 
 # samba
-sudo aptitude install smbfs
+sudo aptitude install smbfs # 12.04
+sudo aptitude install cifs-utils # 13.04
 
 # install "ctags"
 sudo aptitude install exuberant-ctags
