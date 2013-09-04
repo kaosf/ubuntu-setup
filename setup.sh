@@ -24,10 +24,6 @@ unzip dmd.2.059.zip
 mv dmd2 ~/local/bin
 echo "export PATH=$HOME/local/bin/dmd2/linux/bin64:$PATH" >> ~/.zshenv
 
-# FFmpeg
-# ref. install-ffmpeg-10.04.sh or
-#      install-ffmpeg-12.04.sh
-
 # subversion
 sudo aptitude install subversion libapache2-svn
 sudo vim /etc/apache2/mods-enabled/dav_svn.conf
