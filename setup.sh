@@ -85,10 +85,6 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java6-installer
 
-# to install nokogiri
-sudo aptitude install libxslt-dev libxml2-dev
-gem install nokogiri
-
 # samba
 sudo aptitude install smbfs # 12.04
 sudo aptitude install cifs-utils # 13.04

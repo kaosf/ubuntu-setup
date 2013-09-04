@@ -13,3 +13,7 @@ rbenv install 2.0.0-p247
 rbenv global 2.0.0-p247
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
+
+# to install nokogiri
+sudo aptitude install libxslt-dev libxml2-dev
+gem install nokogiri
