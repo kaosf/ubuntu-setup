@@ -1,8 +1,9 @@
-sudo aptitude install emacs
+#! /bin/sh
 
-# ref. http://d.hatena.ne.jp/tomoya/20090121/1232536106
-if [ ! -d $HOME/.emacs.d/elisp ]; then
-  mkdir -p $HOME/.emacs.d/elisp
-fi
-cd $HOME/.emacs.d/elisp
-wget http://www.emacswiki.org/cgi-bin/wiki/download/install-elisp.el
+cd $HOME/local/src
+wget ftp://ftp.ring.gr.jp/pub/GNU/emacs/emacs-24.3.tar.gz
+tar xzf emacs-24.3.tar.gz
+cd emacs-24.3
+./configure --prefix=$HOME/local --with-x-toolkit=no
+make
+make install
