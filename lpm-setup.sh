@@ -1,7 +1,6 @@
 wget http://www.kasahara.ws/lpm/lpm
 chmod +x lpm
-./lpm initlocaldir
-#./lpm initlocaldir --local=$HOME/.lcl
+./lpm initlocaldir --local=.lcl
 rm lpm
 
 tail -3 .zshrc >> .zshenv
