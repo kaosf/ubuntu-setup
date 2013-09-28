@@ -113,7 +113,7 @@ sudo -u git -H bundle exec rake gitlab:check RAILS_ENV=production
 # => OK!
 
 # 7. Nginx
-sudo aapt-get install nginx
+sudo apt-get install nginx
 sudo cp lib/support/nginx/gitlab /etc/nginx/sites-available/gitlab /home/git/gitlab
 sudo ln -s /etc/nginx/sites-available/gitlab /etc/nginx/sites-enabled/gitlab
 sudo service nginx restart
