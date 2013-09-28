@@ -5,6 +5,9 @@
 
 # Ubuntu Server 12.04 amd64 on Sakura VPS 1G
 
+# 0. Install Vim for editing text file configurations
+sudo aptitude install vim
+
 # 1. Packages/Dependencies
 sudo aptitude update
 sudo aptitude safe-upgrade
