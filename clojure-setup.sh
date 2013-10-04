@@ -30,3 +30,5 @@ else
 fi
 EOS
 chmod +x $HOME/local/bin/clj
+
+#[[ $(jark vm stat) =~ '^Cannot connect to the JVM on' ]]
