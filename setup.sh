@@ -2,7 +2,11 @@ sudo aptitude update
 sudo aptitude safe-upgrade
 sudo aptitude install zsh vim tmux git tig curl build-essential
 chsh -s /usr/bin/zsh
-# configure or get .zshrc .vimrc .screenrc .gitconfig
+
+# get dotfiles
+git clone https://github.com/kaosf/dotfiles $HOME/dotfiles
+cd $HOME/dotfiles && ./setup
+
 # logout
 # login
 
