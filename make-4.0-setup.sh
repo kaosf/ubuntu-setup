@@ -6,7 +6,7 @@ cd $HOME/local/src
 wget http://ftp.gnu.org/gnu/make/make-4.0.tar.gz
 tar xzf make-4.0.tar.gz
 cd make-4.0
-./configure --prefix=$HOME/local
+./configure --prefix=$HOME/local --with-guile
 make
 make install
 #make uninstall
