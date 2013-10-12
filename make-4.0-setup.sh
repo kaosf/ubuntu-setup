@@ -7,3 +7,4 @@ cd make-4.0
 ./configure --prefix=$HOME/local
 make
 make install
+#make uninstall
