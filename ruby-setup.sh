@@ -15,5 +15,5 @@ gem install bundler --no-ri --no-rdoc
 rbenv rehash
 
 # to install nokogiri
-sudo aptitude install libxslt-dev libxml2-dev
+sudo aptitude install libxslt1-dev libxml2-dev
 gem install nokogiri
