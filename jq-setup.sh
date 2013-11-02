@@ -5,7 +5,7 @@
 cd $HOME/local/src
 git clone https://github.com/stedolan/jq.git
 cd jq
-autoreconf
+autoreconf -i
 ./configure --prefix=$HOME/local
 
 # `flex` package and `yacc` command are needed for make
