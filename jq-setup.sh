@@ -11,6 +11,9 @@ autoreconf -i
 # `flex` package and `yacc` command are needed for make
 # ref. http://diaryrnsit.blogspot.jp/2012/10/how-to-install-lex-in-ubuntu-12.html
 sudo aptitude install flex bison
+# Ubuntu 12.04
+# ref. http://manpages.ubuntu.com/manpages/hardy/man1/libtoolize.1.html
+sudo aptitude install libtool
 
 make
 make install
