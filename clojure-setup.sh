@@ -18,17 +18,3 @@ jark server install
 #jark vm stat
 #jark repl
 #jark server stop
-
-cat <<EOS > $HOME/local/bin/clj
-#! /bin/sh
-
-if [ $# -eq 0 ]
-then
-  jark -e
-else
-  jark -e < $1
-fi
-EOS
-chmod +x $HOME/local/bin/clj
-
-#[[ $(jark vm stat) =~ '^Cannot connect to the JVM on' ]]
