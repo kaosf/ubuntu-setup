@@ -13,7 +13,7 @@ autoreconf -i
 sudo aptitude install flex bison
 # Ubuntu 12.04
 # ref. http://manpages.ubuntu.com/manpages/hardy/man1/libtoolize.1.html
-sudo aptitude install libtool
+sudo aptitude install libtool automake
 
 make
 make install
