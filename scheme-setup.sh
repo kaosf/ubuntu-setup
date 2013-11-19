@@ -1,0 +1,1 @@
+sudo aptitude install gauche
