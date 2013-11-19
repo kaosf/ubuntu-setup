@@ -1,1 +1,1 @@
-sudo aptitude install ibus-mozc git-gui
+sudo aptitude install firefox ibus-mozc git-gui xsel gtkvncviewer
