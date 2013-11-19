@@ -84,11 +84,6 @@ vim Makefile
 make
 make install
 
-# Java6
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install oracle-java6-installer
-
 # samba
 sudo aptitude install smbfs # 12.04
 sudo aptitude install cifs-utils # 13.04
