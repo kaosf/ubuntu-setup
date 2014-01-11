@@ -9,6 +9,8 @@ echo 'export PATH=$HOME/.gocode/bin:$PATH' >> $HOME/.zshenv
 source $HOME/.zshrc
 
 # ref. https://github.com/heroku/hk
+# Mercurial ("hg" command) is required
+sudo aptitude install mercurial
 go get github.com/heroku/hk
 echo 'machine api.heroku.com login <email> password <password>' > $HOME/.netrc
 chmod 600 $HOME/.netrc
