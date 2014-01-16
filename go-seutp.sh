@@ -6,7 +6,7 @@ echo 'export GOROOT=$HOME/.go' >> .zshenv
 echo 'export PATH=$PATH:$GOROOT/bin' >> .zshenv
 echo 'export GOPATH=$HOME/.gocode' >> .zshenv
 echo 'export PATH=$HOME/.gocode/bin:$PATH' >> $HOME/.zshenv
-source $HOME/.zshrc
+source $HOME/.zshenv
 
 # ref. https://github.com/heroku/hk
 # Mercurial ("hg" command) is required
