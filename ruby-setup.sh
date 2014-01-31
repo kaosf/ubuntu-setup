@@ -18,7 +18,7 @@ echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv
 exec $SHELL -l
 mkdir -p $HOME/.rbenv/plugins
 git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
-rbenv install 2.0.0-p247
-rbenv global 2.0.0-p247
+rbenv install 2.1.0
+rbenv global 2.1.0
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
