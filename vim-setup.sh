@@ -4,6 +4,9 @@ sudo add-apt-repository ppa:fcwu-tw/ppa
 sudo aptitude update
 sudo aptitude install vim
 
+# for +lua (virtual package vim-lua)
+sudo aptitude install vim-nox
+
 # install NeoBundle
 if [ ! -d $HOME/.vim/bundle ]
 then
