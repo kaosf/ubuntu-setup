@@ -15,6 +15,8 @@ fi
 git clone git://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
 
 # execute :NeoBundleInstall in Vim command mode
+# execute :NeoBundleUpdate to update
+# execute :NeoBundleClean to cleaning
 
 # setup vimproc
 cd $HOME/.vim/bundle/vimproc
