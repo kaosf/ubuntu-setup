@@ -6,10 +6,6 @@
 #   https://gist.github.com/jugyo/899506
 :plugin_install https://gist.github.com/899506
 
-# favstar
-# ref. http://d.hatena.ne.jp/hecomi/20120404/1333556123
-:plugin_install https://gist.github.com/siyo/1397366
-
 # ka-aliases
 :plugin_install https://gist.github.com/kaosf/6037788
 
