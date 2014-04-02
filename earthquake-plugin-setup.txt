@@ -6,6 +6,9 @@
 #   https://gist.github.com/jugyo/899506
 :plugin_install https://gist.github.com/899506
 
+# favstar (only to open favstar)
+:plugin_install https://gist.github.com/kaosf/9929128
+
 # ka-aliases
 :plugin_install https://gist.github.com/kaosf/6037788
 
