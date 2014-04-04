@@ -13,5 +13,4 @@ rm go1.2.1.linux-amd64.tar.gz
 # Mercurial ("hg" command) is required
 sudo aptitude install mercurial
 go get github.com/heroku/hk
-echo 'machine api.heroku.com login <email> password <password>' > $HOME/.netrc
-chmod 600 $HOME/.netrc
+hk login # or "heroku login"
