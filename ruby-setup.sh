@@ -22,3 +22,8 @@ rbenv install 2.1.0
 rbenv global 2.1.0
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
+
+# don't have to input "bundle exec"
+# ref. http://qiita.com/ryurock/items/77542e00cbca5268e323
+cd $HOME/.rbenv/plugins
+git clone https://github.com/ianheggie/rbenv-binstubs.git
