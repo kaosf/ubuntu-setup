@@ -9,4 +9,3 @@ cd make-4.0
 ./configure --prefix=$HOME/local --with-guile
 make
 make install
-#make uninstall
