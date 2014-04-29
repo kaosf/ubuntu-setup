@@ -7,6 +7,9 @@ sudo aptitude install vim
 # for +lua (virtual package vim-lua)
 sudo aptitude install vim-nox
 
+# for +clipboard (on GNOME desktop environment)
+sudo aptitude install vim-gnome
+
 # install NeoBundle
 if [ ! -d $HOME/.vim/bundle ]
 then
