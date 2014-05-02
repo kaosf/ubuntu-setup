@@ -4,7 +4,7 @@ sudo aptitude install zsh vim git tig curl build-essential
 chsh -s /usr/bin/zsh
 
 # get dotfiles
-git clone https://github.com/kaosf/dotfiles $HOME/dotfiles
+git clone git@github.com:kaosf/dotfiles $HOME/dotfiles
 cd $HOME/dotfiles && ./setup
 
 # logout
