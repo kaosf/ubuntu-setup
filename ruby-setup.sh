@@ -25,5 +25,6 @@ git clone https://github.com/ianheggie/rbenv-binstubs.git $HOME/.rbenv/plugins/r
 #rbenv install 2.1.1 #=> Error
 curl -fsSL https://gist.github.com/mislav/a18b9d7f0dc5b9efc162.txt | rbenv install --patch 2.1.1
 rbenv global 2.1.1
+rbenv rehash
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
