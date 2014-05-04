@@ -7,7 +7,7 @@ echo 'export PATH=$PATH:$GOROOT/bin' >> $HOME/.zshenv
 echo 'export GOPATH=$HOME/.gocode' >> $HOME/.zshenv
 echo 'export PATH=$HOME/.gocode/bin:$PATH' >> $HOME/.zshenv
 source $HOME/.zshenv
-rm go1.2.1.linux-amd64.tar.gz
+rm -f go1.2.1.linux-amd64.tar.gz
 
 # ref. https://github.com/heroku/hk
 # Mercurial ("hg" command) is required
