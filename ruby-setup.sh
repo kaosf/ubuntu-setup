@@ -12,7 +12,7 @@
 # libxslt1-dev libxml2-dev for nokogiri
 sudo aptitude install curl zlib1g-dev libssl-dev libreadline6-dev \
   libsqlite3-dev \
-  postgresql-server-dev-9.1 \
+  postgresql-server-dev-9.3 \
   libxslt1-dev libxml2-dev
 
 git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
