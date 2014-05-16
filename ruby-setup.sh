@@ -8,7 +8,7 @@
 # curl is needed for patch
 # zlib1g-dev libssl-dev libreadline6-dev are needed to build
 # libsqlite3-dev for SQLite3
-# postgresql-server-dev-9.1 for PostgreSQL 9.1
+# postgresql-server-dev-9.3 for PostgreSQL 9.3
 # libxslt1-dev libxml2-dev for nokogiri
 sudo aptitude install curl zlib1g-dev libssl-dev libreadline6-dev \
   libsqlite3-dev \
