@@ -1,6 +1,6 @@
 sudo aptitude update
 sudo aptitude safe-upgrade
-sudo aptitude install zsh vim git curl build-essential
+sudo aptitude install zsh vim git curl build-essential automake
 chsh -s /usr/bin/zsh
 
 # get dotfiles
