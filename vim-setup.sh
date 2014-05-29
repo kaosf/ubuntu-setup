@@ -13,8 +13,7 @@ git clone git://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
 # execute :NeoBundleClean to cleaning
 
 # setup ka-vim-snippets
-cd $HOME/.vim
-git clone git@github.com:kaosf/ka-vim-snippets.git
+git clone git://github.com/kaosf/ka-vim-snippets.git $HOME/.vim/ka-vim-snippets
 
 # setup vimproc
 cd $HOME/.vim/bundle/vimproc
