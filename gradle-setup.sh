@@ -17,3 +17,5 @@ gvm install gradle 1.10
 gvm use gradle 1.10
 # How to check installed Gradle versions
 gvm list gradle
+# How to reset default Gradle version
+gvm default gradle 1.10
