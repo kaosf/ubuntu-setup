@@ -1,5 +1,5 @@
 # for +lua +clipboard
-sudo aptitude install vim-gnome
+sudo aptitude install vim-gtk
 
 # install NeoBundle
 if [ ! -d $HOME/.vim/bundle ]
