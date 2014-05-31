@@ -1,5 +1,6 @@
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
 sudo apt-get install aptitude zsh vim git curl build-essential automake
-sudo aptitude update
 sudo aptitude safe-upgrade
 chsh -s /usr/bin/zsh
 # get dotfiles
