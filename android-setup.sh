@@ -19,6 +19,6 @@ export PATH=$HOME/local/android-sdk-linux/build-tools/19.0.3:$PATH
 # Install all Android SDKs
 android update sdk --no-ui
 
-# Install dependent packages
-# ref. http://blog.sola-dolphin-1.net/archives/4633272.html
-sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev libc6-dev lib32ncurses5-dev lib32z1 x11proto-core-dev libx11-dev lib32readline-gplv2-dev lib32z-dev libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils python-software-properties xsltproc libx11-dev:i386
+# Install dependent packages for 64bit
+# ref. http://qiita.com/nichijo/items/773403a4bac7180a26ab
+sudo apt-get install lib32stdc++6 lib32z1
