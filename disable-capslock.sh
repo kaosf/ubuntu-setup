@@ -3,4 +3,3 @@
 sudo cp /etc/default/keyboard /etc/default/keyboard.orig.`date +%Y%m%d%H%M%S`
 sed 's/XKBOPTIONS=""/XKBOPTIONS="ctrl:nocaps"/' /etc/default/keyboard | \
 sudo tee /etc/default/keyboard
-sudo reboot
