@@ -64,3 +64,6 @@ vim Makefile
 
 make
 make install
+
+# jq
+sudo aptitude install jq
