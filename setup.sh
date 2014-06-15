@@ -3,9 +3,6 @@ sudo apt-get update
 sudo apt-get install aptitude zsh vim git curl build-essential automake
 sudo aptitude safe-upgrade
 chsh -s /usr/bin/zsh
-# get dotfiles
-git clone git@github.com:kaosf/dotfiles.git $HOME/dotfiles
-cd $HOME/dotfiles && ./setup
 # logout
 # login
 touch $HOME/.zshenv && chmod 600 $HOME/.zshenv
