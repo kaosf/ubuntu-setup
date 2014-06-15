@@ -3,8 +3,6 @@ sudo apt-get update
 sudo apt-get install aptitude zsh vim git curl build-essential automake
 sudo aptitude safe-upgrade
 chsh -s /usr/bin/zsh
-# logout
-# login
 touch $HOME/.zshenv && chmod 600 $HOME/.zshenv
 # for local install
 mkdir -p $HOME/local/src
