@@ -1,3 +1,6 @@
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install aptitude zsh vim git curl build-essential automake
