@@ -1,8 +1,9 @@
-# Install Ruby with rbenv + ruby-build
+# Install Ruby with rbenv + ruby-build + rbenv-binstubs
 # ref.
 #   https://github.com/sstephenson/rbenv
 #   https://github.com/sstephenson/ruby-build
 #   http://qiita.com/ryurock/items/77542e00cbca5268e323
+#   https://github.com/ianheggie/rbenv-binstubs
 
 # zlib1g-dev libssl-dev libreadline6-dev are needed to build
 # libsqlite3-dev for SQLite3
