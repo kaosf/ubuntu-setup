@@ -1,6 +1,6 @@
 # ref. http://golang.org/doc/install
 VERSION=1.3
-wget http://go.googlecode.com/files/go${VERSION}.linux-amd64.tar.gz
+wget http://golang.org/dl/go${VERSION}.linux-amd64.tar.gz
 tar xzf go${VERSION}.linux-amd64.tar.gz
 mv go $HOME/.go
 echo 'export GOROOT=$HOME/.go' >> $HOME/.zshenv
