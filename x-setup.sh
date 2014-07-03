@@ -12,3 +12,8 @@ sudo aptitude install libnotify-bin
 #   http://www.mk-mode.com/octopress/2013/06/22/linux-mint-tmux-clipboard-share/
 #   http://www.mk-mode.com/octopress/2013/06/21/linux-mint-install-xsel/
 sudo aptitude install xsel
+
+# For playing .ogg sound file
+# Example command: ogg123 foo.ogg
+# ref. http://www.techerator.com/2011/09/how-to-play-ogg-vorbis-files-from-the-linux-command-line/
+sudo aptitude install vorbis-tools
