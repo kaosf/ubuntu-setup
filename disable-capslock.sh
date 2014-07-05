@@ -3,3 +3,6 @@
 sudo cp /etc/default/keyboard /etc/default/keyboard.orig.`date +%Y%m%d%H%M%S`
 sed 's/XKBOPTIONS=""/XKBOPTIONS="ctrl:nocaps"/' /etc/default/keyboard | \
 sudo tee /etc/default/keyboard
+# Enable the change without reboot
+# ref. /usr/share/doc/keyboard-configuration/README.Debian
+udevadm trigger --subsystem-match=input --action=change
