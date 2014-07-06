@@ -1,10 +1,7 @@
 sudo aptitude install libevent-dev libncurses-dev
 #sudo aptitude install libevent-dev libncurses5-dev
 
-if [ ! -d $HOME/local/src ]
-then
-  mkdir $HOME/local/src
-fi
+mkdir -p $HOME/local/src
 cd $HOME/local/src
 wget http://downloads.sourceforge.net/tmux/tmux-1.9a.tar.gz
 tar xzf tmux-1.9a.tar.gz
