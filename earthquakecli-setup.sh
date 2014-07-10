@@ -1,6 +1,6 @@
 # Install tmux at first
 
-sudo aptitude install w3m
+sudo aptitude install w3m w3m-img
 
 cat <<EOF > $HOME/local/bin/browser-for-earthquakecli-on-tmux
 #!/bin/bash
