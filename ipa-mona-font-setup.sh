@@ -5,3 +5,7 @@ cp opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8/fonts/*.ttf $HOME/.fonts
 rm -rf opfc-ModuleHP-1.1.1_withIPAMonaFonts-1.0.8
 fc-cache -f
 #fc-list | grep IPA
+
+# Remove
+rm -f $HOME/.fonts/*
+fc-cache -r
