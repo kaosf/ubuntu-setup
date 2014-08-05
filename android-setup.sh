@@ -3,18 +3,20 @@
 # ref. java-setup.sh
 
 # Download android-sdk
-if [ ! -d $HOME/local ]
+if [ ! -d $HOME/local/opt ]
 then
-  mkdir $HOME/local
+  mkdir $HOME/local/opt
 fi
 cd $HOME/local
 wget http://dl.google.com/android/android-sdk_r22.6.2-linux.tgz
 tar xf android-sdk_r22.6.2-linux.tgz
 
 echo 'export PATH=$HOME/local/android-sdk-linux/tools:$PATH' >> $HOME/.zshenv
-echo 'export PATH=$HOME/local/android-sdk-linux/build-tools/19.0.3:$PATH' >> $HOME/.zshenv
+echo 'export PATH=$HOME/local/android-sdk-linux/platform-tools:$PATH' >> $HOME/.zshenv
+echo 'export PATH=$HOME/local/android-sdk-linux/build-tools/19.1.0:$PATH' >> $HOME/.zshenv
 export PATH=$HOME/local/android-sdk-linux/tools:$PATH
-export PATH=$HOME/local/android-sdk-linux/build-tools/19.0.3:$PATH
+export PATH=$HOME/local/android-sdk-linux/platform-tools:$PATH
+export PATH=$HOME/local/android-sdk-linux/build-tools/19.1.0:$PATH
 
 # Install all Android SDKs
 android update sdk --no-ui
