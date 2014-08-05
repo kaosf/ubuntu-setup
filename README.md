@@ -2,8 +2,6 @@
 
 This memo is for Ubuntu version
 
-* 12.04 amd64
-* 13.04 amd64
 * 14.04 amd64
 
 ## License
