@@ -65,5 +65,8 @@ vim Makefile
 make
 make install
 
+# ag
+sudo aptitude install silversearcher-ag
+
 # jq
 sudo aptitude install jq
