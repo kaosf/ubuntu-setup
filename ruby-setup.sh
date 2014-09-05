@@ -26,3 +26,7 @@ rbenv global 2.1.2
 rbenv rehash
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
+
+# For ruby-ldap
+# ref. https://github.com/bearded/ruby-ldap/issues/7
+sudo aptitude install libldap2-dev libsasl2-dev
