@@ -30,3 +30,5 @@ rbenv rehash
 # For ruby-ldap
 # ref. https://github.com/bearded/ruby-ldap/issues/7
 sudo aptitude install libldap2-dev libsasl2-dev
+# For rmagic
+sudo aptitude install libmagickwand-dev
