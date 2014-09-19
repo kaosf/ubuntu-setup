@@ -4,7 +4,7 @@ mkdir -p $HOME/local/src
 cd $HOME/local/src
 git clone https://github.com/jonas/tig
 cd tig
-git checkout tig-2.0.2
+git checkout tig-2.0.3
 ./autogen.sh
 ./configure --prefix=$HOME/local
 make
