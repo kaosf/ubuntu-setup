@@ -1,5 +1,8 @@
 sudo apt-get -y -q update
 sudo apt-get -y -q upgrade
+echo 'LC_ALL=en_US.UTF-8' | sudo tee -a /etc/environment
+echo 'LANG=en_US.UTF-8'   | sudo tee -a /etc/environment
+sudo reboot
 sudo apt-get -y install software-properties-common
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get -y update
