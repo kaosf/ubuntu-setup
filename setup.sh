@@ -1,10 +1,10 @@
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install software-properties-common
+sudo apt-get -y -q update
+sudo apt-get -y -q upgrade
+sudo apt-get -y install software-properties-common
 sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install aptitude zsh vim git curl build-essential automake
-sudo aptitude safe-upgrade
+sudo apt-get -y update
+sudo apt-get -y install aptitude zsh vim git curl build-essential automake
+sudo aptitude -y safe-upgrade
 chsh -s /usr/bin/zsh
 touch $HOME/.zshenv && chmod 600 $HOME/.zshenv
 # for local install
