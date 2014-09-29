@@ -8,7 +8,7 @@ sudo aptitude -y install libcurl4-openssl-dev
 export ORIG_PATH="$PATH"
 sudo -s -E
 export PATH="$ORIG_PATH"
-/home/username/.rbenv/versions/2.1.2/bin/ruby /home/username/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/passenger-4.0.50/bin/passenger-install-nginx-module
+/home/username/.rbenv/versions/2.1.3/bin/ruby /home/username/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/passenger-4.0.50/bin/passenger-install-nginx-module
 # Follow the guides of Passenger
 
 # Edit /opt/nginx/conf/nginx.conf
