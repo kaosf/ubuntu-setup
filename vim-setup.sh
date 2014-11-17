@@ -31,6 +31,7 @@ cd $HOME/local/src
 # ref. https://github.com/vim-jp/vim
 git clone https://github.com/vim-jp/vim
 cd vim
+git checkout v7-4-516
 ./configure \
   --prefix=$HOME/local \
   --enable-gui=gtk2 \
@@ -45,3 +46,4 @@ cd vim
   --with-luajit
 make
 make install
+git checkout master
