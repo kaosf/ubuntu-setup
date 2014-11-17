@@ -1,12 +1,3 @@
-# ref. http://www.vim.org/mercurial.php
-mkdir -p $HOME/local/src && cd $HOME/local/src
-hg clone https://vim.googlecode.com/hg/ vim
-cd vim
-hg pull
-hg update
-cd src
-make
-
 # for +lua +clipboard
 sudo aptitude install vim-gtk
 # or only +lua
