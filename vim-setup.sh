@@ -22,40 +22,15 @@ cd $HOME/.vim/bundle/vimproc
 make
 
 ## Build by myself
+sudo aptitude install \
+  lua5.2 liblua5.2-dev luajit libluajit-5.1-2 libluajit-5.1-dev \
+  libperl-dev \
+  libpython-dev libpython3-dev
 mkdir -p $HOME/local/src
 cd $HOME/local/src
 # ref. https://github.com/vim-jp/vim
 git clone https://github.com/vim-jp/vim
 cd vim
-./configure \
-  --prefix=$HOME/local \
-  --enable-gui=gtk2 \
-  --enable-perlinterp=yes \
-  --enable-pythoninterp=yes \
-  --enable-rubyinterp \
-  --enable-luainterp=yes \
-  --enable-multibyte \
-  --enable-fail-if-missing \
-  --with-features=huge \
-  --with-x \
-  --with-luajit
-
-# To resolve the error below;
-#
-#     configure: error: could not configure lua
-sudo aptitude install lua5.2 liblua5.2-dev luajit libluajit-5.1-2 libluajit-5.1-dev
-
-# To resolve the error below;
-#
-#     configure: error: could not configure perl
-sudo aptitude install libperl-dev
-
-# To resolve the error below;
-#
-#     can't find it!
-#     configure: error: could not configure python
-sudo aptitude install libpython-dev libpython3-dev
-
 ./configure \
   --prefix=$HOME/local \
   --enable-gui=gtk2 \
