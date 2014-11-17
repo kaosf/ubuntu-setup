@@ -54,7 +54,7 @@ sudo aptitude install libperl-dev
 #
 #     can't find it!
 #     configure: error: could not configure python
-sudo aptitude install python-dev python3-dev
+sudo aptitude install libpython-dev libpython3-dev
 
 ./configure \
   --prefix=$HOME/local \
