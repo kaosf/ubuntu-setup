@@ -22,6 +22,9 @@ export PATH=$HOME/local/android-sdk-linux/build-tools/19.1.0:$PATH
 # Install all Android SDKs
 android update sdk --no-ui
 
+# Install all tools
+android update sdk --no-ui --all
+
 # Install dependent packages for 64bit
 # ref. http://qiita.com/nichijo/items/773403a4bac7180a26ab
 sudo apt-get install lib32stdc++6 lib32z1
