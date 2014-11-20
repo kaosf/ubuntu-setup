@@ -32,3 +32,6 @@ rbenv rehash
 sudo aptitude install libldap2-dev libsasl2-dev
 # For rmagic
 sudo aptitude install libmagickwand-dev
+locate MagickCore.pc # To find /usr/lib/x86_64-linux-gnu/pkgconfig
+PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig \
+  gem install rmagick -v 2.13.3
