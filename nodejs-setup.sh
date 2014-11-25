@@ -1,8 +1,9 @@
 # install Node.js with nodebrew
 # ref. https://github.com/hokaccha/nodebrew
 
+brew install nodebrew
 cat <<EOS >> $HOME/.zshenv
-export PATH=\$HOME/.nodebrew/current/bin:\$PATH
+export PATH=\$HOME/.linuxbrew/var/nodebrew/current/bin:\$PATH
 export NODEBREW_ROOT=\$HOME/.linuxbrew/var/nodebrew
 EOS
 
