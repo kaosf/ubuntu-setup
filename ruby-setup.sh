@@ -14,16 +14,10 @@ sudo aptitude install zlib1g-dev libssl-dev libreadline6-dev \
   postgresql-server-dev-9.3 \
   libxslt1-dev libxml2-dev
 
-git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $HOME/.zshenv
-echo 'eval "$(rbenv init -)"' >> $HOME/.zshenv
-exec $SHELL -l
-mkdir -p $HOME/.rbenv/plugins
-git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
-git clone https://github.com/ianheggie/rbenv-binstubs.git $HOME/.rbenv/plugins/rbenv-binstubs
-rbenv install 2.1.4
-rbenv global 2.1.4
-rbenv rehash
+brew install rbenv ruby-build rbenv-binstubs
+LATEST_VERSION=2.1.5
+rbenv install $LATEST_VERSION
+rbenv global $LATEST_VERSION
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
 
