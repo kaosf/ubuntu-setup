@@ -46,4 +46,5 @@ git checkout v7-4-516
   --with-luajit
 make
 make install
+git reset HEAD --hard
 git checkout master
