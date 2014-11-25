@@ -1,9 +1,10 @@
 # install Node.js with nodebrew
 # ref. https://github.com/hokaccha/nodebrew
 
-curl -L git.io/nodebrew | perl - setup
-echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> $HOME/.zshenv
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+cat <<EOS >> $HOME/.zshenv
+export PATH=\$HOME/.nodebrew/current/bin:\$PATH
+export NODEBREW_ROOT=\$HOME/.linuxbrew/var/nodebrew
+EOS
 
 # nodebrew help
 # nodebrew ls-all
