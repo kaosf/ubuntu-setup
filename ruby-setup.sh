@@ -36,3 +36,5 @@ sudo aptitude install libmagickwand-dev
 locate MagickCore.pc # To find /usr/lib/x86_64-linux-gnu/pkgconfig
 PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig \
   gem install rmagick -v 2.13.3
+# For filemagic
+sudo aptitude install libmagic-dev
