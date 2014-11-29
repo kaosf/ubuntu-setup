@@ -17,3 +17,7 @@ sudo aptitude install xsel
 # Example command: ogg123 foo.ogg
 # ref. http://www.techerator.com/2011/09/how-to-play-ogg-vorbis-files-from-the-linux-command-line/
 sudo aptitude install vorbis-tools
+
+# For gamepad
+# ref. http://gcnqf306.cocolog-nifty.com/blog/2014/07/ubuntu-c62c.html
+sudo aptitude install joystick jstest-gtk
