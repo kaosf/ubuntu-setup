@@ -10,3 +10,4 @@ echo 'export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"' >> $HOME/.zshenv
 source $HOME/.zshenv
 brew install tmux tig ag jq
 echo 'export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig' >> $HOME/.zshenv
+wget https://raw.githubusercontent.com/m4i/cdd/master/cdd -O $HOME/.cdd-source
