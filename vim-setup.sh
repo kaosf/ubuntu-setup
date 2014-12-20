@@ -31,7 +31,6 @@ cd $HOME/local/src
 # ref. https://github.com/vim-jp/vim
 git clone https://github.com/vim-jp/vim
 cd vim
-git checkout v7-4-516
 ./configure \
   --prefix=$HOME/local \
   --enable-gui=gtk2 \
@@ -46,5 +45,24 @@ git checkout v7-4-516
   --with-luajit
 make
 make install
-git reset HEAD --hard
-git checkout master
+
+# Without X
+./configure \
+  --prefix=$HOME/local \
+  --enable-perlinterp=yes \
+  --enable-pythoninterp=yes \
+  --enable-rubyinterp \
+  --enable-luainterp=yes \
+  --enable-multibyte \
+  --enable-fail-if-missing \
+  --with-features=huge \
+  --with-luajit
+
+## Update
+cd vim
+make clean
+make distclean
+git pull
+# ./configure
+make
+make install
