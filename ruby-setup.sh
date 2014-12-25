@@ -9,7 +9,7 @@
 # libsqlite3-dev for SQLite3
 # postgresql-server-dev-9.3 for PostgreSQL 9.3
 # libxslt1-dev libxml2-dev for nokogiri
-sudo aptitude install zlib1g-dev libssl-dev libreadline6-dev \
+sudo aptitude install zlib1g-dev libssl-dev libreadline6-dev libffi-dev \
   libsqlite3-dev \
   postgresql-server-dev-9.3 \
   libxslt1-dev libxml2-dev
@@ -21,8 +21,8 @@ exec $SHELL -l
 mkdir -p $HOME/.rbenv/plugins
 git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
 git clone https://github.com/ianheggie/rbenv-binstubs.git $HOME/.rbenv/plugins/rbenv-binstubs
-rbenv install 2.1.4
-rbenv global 2.1.4
+rbenv install 2.2.0
+rbenv global 2.2.0
 rbenv rehash
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
