@@ -15,13 +15,6 @@ sudo aptitude install zlib1g-dev libssl-dev libreadline6-dev \
   libxslt1-dev libxml2-dev
 
 brew install rbenv ruby-build rbenv-binstubs
-PROFILE=$HOME/.zshenv
-cat <<EOS >> $HOME/.zshenv
-export RBENV_ROOT=\$HOME/.linuxbrew/var/rbenv
-if which rbenv > /dev/null; then eval "\$(rbenv init -)"; fi
-EOS
-exec $SHELL -l
-
 LATEST_VERSION=2.1.5
 rbenv install $LATEST_VERSION
 rbenv global $LATEST_VERSION
