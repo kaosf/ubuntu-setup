@@ -22,7 +22,15 @@ export PATH=$HOME/local/android-sdk-linux/build-tools/19.1.0:$PATH
 # Install all Android SDKs
 android update sdk --no-ui
 
-# Install all tools
+# Install specified version Android Build tool
+# ref. http://stackoverflow.com/questions/17963508/how-to-install-android-sdk-build-tools-on-the-command-line/19416222#19416222
+android update sdk --no-ui --all --filter X
+#android update sdk -u -a -t X
+
+# Search "X" with following command;
+android list sdk --no-ui --all
+
+# Install all tools (CAUTION: this takes too long time)
 android update sdk --no-ui --all
 
 # Install dependent packages for 64bit
