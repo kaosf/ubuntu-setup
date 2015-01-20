@@ -1,7 +1,7 @@
 sudo aptitude install firefox ibus-mozc git-gui xsel
 
 # VNC Client
-sudo aptitude install xtightvncviewer
+sudo aptitude install gtkvncviewer
 
 # Desktop Notification
 # ref. http://ubuntuforums.org/showthread.php?t=2121753
