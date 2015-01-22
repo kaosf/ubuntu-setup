@@ -6,7 +6,7 @@ then
   git pull
   cd -
 else
-  git clone git://github.com/yonchu/used-mem.git $HOME/local/src
+  git clone git://github.com/yonchu/used-mem.git $HOME/local/src/used-mem
 fi
 mkdir -p $HOME/local/bin
 cp $HOME/local/src/used-mem/used-mem $HOME/local/bin
