@@ -26,6 +26,7 @@ android update sdk --no-ui
 # ref. http://stackoverflow.com/questions/17963508/how-to-install-android-sdk-build-tools-on-the-command-line/19416222#19416222
 android update sdk --no-ui --all --filter X
 #android update sdk -u -a -t X
+#android update sdk -u -a -t X,Y,Z
 
 # Search "X" with following command;
 android list sdk --no-ui --all
