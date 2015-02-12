@@ -7,7 +7,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # nodebrew help
 # nodebrew ls-all
-nodebrew install-binary 0.10
+nodebrew install-binary 0.12
 nodebrew use latest
 
 ## install Node.js manually
