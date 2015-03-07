@@ -8,8 +8,8 @@ then
   mkdir $HOME/local/opt
 fi
 cd $HOME/local
-wget http://dl.google.com/android/android-sdk_r23.0.2-linux.tgz
-tar xf android-sdk_r23.0.2-linux.tgz
+wget http://dl.google.com/android/android-sdk_r24.0.2-linux.tgz
+tar xf android-sdk_r24.0.2-linux.tgz
 
 echo 'export ANDROID_HOME=$HOME/local/android-sdk-linux' >> $HOME/.zshenv
 echo 'export PATH=$HOME/local/android-sdk-linux/tools:$PATH' >> $HOME/.zshenv
