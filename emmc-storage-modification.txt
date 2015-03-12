@@ -1,0 +1,15 @@
+eMMC TRIM discard
+
+ref.
+  http://forum.odroid.com/viewtopic.php?f=65&t=3468&view=unread
+  https://archlinuxjp.kusakata.com/wiki/%E3%82%BD%E3%83%AA%E3%83%83%E3%83%89%E3%82%B9%E3%83%86%E3%83%BC%E3%83%88%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DSolid_State_Drives_%28%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%29%26redirect%3Dno#TRIM
+
+Before:
+
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx /               ext4    errors=remount-ro 0       1
+
+After:
+
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx /               ext4    errors=remount-ro,discard 0       1
