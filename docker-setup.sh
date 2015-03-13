@@ -2,7 +2,7 @@
 wget -qO- https://get.docker.io/gpg | sudo apt-key add -
 sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
 sudo aptitude update
-sudo aptitude install lxc-docker-1.2.0
+sudo aptitude install lxc-docker-1.5.0
 
 ## Giving non-root access
 sudo groupadd docker
