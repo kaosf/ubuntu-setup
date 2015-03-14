@@ -37,3 +37,7 @@ PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig \
   gem install rmagick -v 2.13.3
 # For filemagic
 sudo aptitude install libmagic-dev
+
+# heroku toolbelt
+# ref. https://toolbelt.heroku.com/
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
