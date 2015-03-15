@@ -35,5 +35,7 @@ android list sdk --no-ui --all
 android update sdk --no-ui --all
 
 # Install dependent packages for 64bit
-# ref. http://qiita.com/nichijo/items/773403a4bac7180a26ab
+# ref.
+#   http://qiita.com/nichijo/items/773403a4bac7180a26ab
+#   http://kokufu.blogspot.jp/2014/09/aapt-no-such-file-or-directory.html
 sudo apt-get install lib32stdc++6 lib32z1
