@@ -8,3 +8,6 @@ sudo aptitude install postgresql-9.3 postgresql-server-dev-9.3
 # Disable auto starting
 # ref. http://askubuntu.com/questions/25713/how-to-stop-postgres-from-autostarting-during-start-up
 sudo update-rc.d -f postgresql remove
+
+# Create a user
+sudo su postgres -c "createuser `whoami` -d -l"
