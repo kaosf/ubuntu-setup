@@ -9,4 +9,4 @@ sudo aptitude install -y mongodb-org
 
 # ref. http://te2u.hatenablog.jp/entry/2013/02/06/222342
 echo "smallfiles = true" | sudo tee -a /etc/mongodb.conf
-sudo service mongodb restart
+sudo service mongod restart
