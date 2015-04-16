@@ -1,5 +1,5 @@
 # ref. http://golang.org/doc/install
-VERSION=1.3
+VERSION=1.4.2
 wget http://golang.org/dl/go${VERSION}.linux-amd64.tar.gz
 tar xzf go${VERSION}.linux-amd64.tar.gz
 mv go $HOME/.go
