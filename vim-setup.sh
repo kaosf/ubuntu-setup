@@ -30,6 +30,7 @@ sudo aptitude install \
   lua5.2 liblua5.2-dev luajit libluajit-5.1-2 libluajit-5.1-dev \
   libperl-dev \
   libpython-dev libpython3-dev \
+  ruby ruby-dev \
   libx11-dev libxt-dev libgtk2.0-dev
 mkdir -p $HOME/local/src
 cd $HOME/local/src
