@@ -7,7 +7,7 @@ rm -f emacs-24.5.tar.gz
 cd emacs-24.5
 
 # With X
-sudo aptitude install libgif-dev libxpm-dev
+sudo aptitude install libgif-dev libxpm-dev libxaw7-dev
 ./configure --prefix=$HOME/local
 make
 make install
