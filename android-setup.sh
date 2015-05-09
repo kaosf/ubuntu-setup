@@ -37,3 +37,13 @@ android update sdk --no-ui --all
 #   http://qiita.com/nichijo/items/773403a4bac7180a26ab
 #   http://kokufu.blogspot.jp/2014/09/aapt-no-such-file-or-directory.html
 sudo apt-get install lib32stdc++6 lib32z1
+
+## My minimal requirements for Android app building
+#
+# Android SDK Tools, revision x.y.z
+# Android SDK Platform-tools, revision x.y.z
+# Android SDK Build-tools, revision x.y.z
+# SDK Platform Android x.y.z, API ww, revision v
+# Android Support Repository, revision x
+# Android Support Library, revision x.y.z
+# Google Play services, revision x.y.z
