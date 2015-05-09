@@ -3,10 +3,7 @@
 # ref. java-setup.sh
 
 # Download android-sdk
-if [ ! -d $HOME/local/opt ]
-then
-  mkdir $HOME/local/opt
-fi
+[ -d $HOME/local ] || mkdir $HOME/local
 cd $HOME/local
 wget http://dl.google.com/android/android-sdk_r24.0.2-linux.tgz
 tar xf android-sdk_r24.0.2-linux.tgz
