@@ -5,16 +5,17 @@
 # Download android-sdk
 [ -d $HOME/local ] || mkdir $HOME/local
 cd $HOME/local
-wget http://dl.google.com/android/android-sdk_r24.0.2-linux.tgz
-tar xf android-sdk_r24.0.2-linux.tgz
+wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz
+tar xf android-sdk_r24.2-linux.tgz
+rm -f android-sdk_r24.2-linux.tgz
 
 echo 'export ANDROID_HOME=$HOME/local/android-sdk-linux' >> $HOME/.zshenv
 echo 'export PATH=$HOME/local/android-sdk-linux/tools:$PATH' >> $HOME/.zshenv
 echo 'export PATH=$HOME/local/android-sdk-linux/platform-tools:$PATH' >> $HOME/.zshenv
-echo 'export PATH=$HOME/local/android-sdk-linux/build-tools/19.1.0:$PATH' >> $HOME/.zshenv
+echo 'export PATH=$HOME/local/android-sdk-linux/build-tools/22.0.1:$PATH' >> $HOME/.zshenv
 export PATH=$HOME/local/android-sdk-linux/tools:$PATH
 export PATH=$HOME/local/android-sdk-linux/platform-tools:$PATH
-export PATH=$HOME/local/android-sdk-linux/build-tools/19.1.0:$PATH
+export PATH=$HOME/local/android-sdk-linux/build-tools/22.0.1:$PATH
 
 # Install all Android SDKs
 android update sdk --no-ui
