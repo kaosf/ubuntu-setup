@@ -29,7 +29,7 @@ android update sdk --no-ui --all --filter X
 # Search "X" with following command;
 android list sdk --no-ui --all
 
-# Install all tools (CAUTION: this takes too long time)
+# Install all tools (CAUTION: It takes too long time for this)
 android update sdk --no-ui --all
 
 # Install dependent packages for 64bit
