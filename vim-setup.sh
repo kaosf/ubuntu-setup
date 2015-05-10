@@ -4,10 +4,7 @@ sudo aptitude install vim-gtk
 #sudo aptitude install vim-nox
 
 # install NeoBundle
-if [ ! -d $HOME/.vim/bundle ]
-then
-  mkdir -p $HOME/.vim/bundle
-fi
+[ -d $HOME/.vim/bundle ] || mkdir -p $HOME/.vim/bundle
 git clone git://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
 
 # execute :NeoBundleInstall in Vim command mode
