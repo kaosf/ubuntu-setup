@@ -18,10 +18,6 @@ git clone git://github.com/kaosf/ka-vim-snippets.git $HOME/.vim/ka-vim-snippets
 cd $HOME/.vim/bundle/vimproc
 make
 
-# Install Ruby before ./congiure
-rbenv install 2.2.2
-rbenv global 2.2.2
-
 ## Build by myself
 sudo aptitude install \
   lua5.2 liblua5.2-dev luajit libluajit-5.1-2 libluajit-5.1-dev \
@@ -53,7 +49,8 @@ make install
 sudo aptitude install \
   lua5.2 liblua5.2-dev luajit libluajit-5.1-2 libluajit-5.1-dev \
   libperl-dev \
-  libpython-dev libpython3-dev
+  libpython-dev libpython3-dev \
+  ruby ruby-dev
 # ...
 ./configure \
   --prefix=$HOME/local \
