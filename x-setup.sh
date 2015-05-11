@@ -1,5 +1,9 @@
 sudo aptitude install firefox ibus-mozc git-gui xsel
 
+# Terminator
+# ref. http://jlinuxer.dip.jp/?p=523
+sudo aptitude install terminator
+
 # VNC Client
 sudo aptitude install gtkvncviewer
 
