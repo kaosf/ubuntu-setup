@@ -1,7 +1,7 @@
 # http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0-vivid/
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0.2-wily/linux-headers-4.0.2-040002-generic_4.0.2-040002.201505081529_amd64.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0.2-wily/linux-headers-4.0.2-040002_4.0.2-040002.201505081529_all.deb
-wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0.2-wily/linux-image-4.0.2-040002-generic_4.0.2-040002.201505081529_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0.4-wily/linux-headers-4.0.4-040004-generic_4.0.4-040004.201505171336_amd64.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0.4-wily/linux-headers-4.0.4-040004_4.0.4-040004.201505171336_all.deb
+wget http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.0.4-wily/linux-image-4.0.4-040004-generic_4.0.4-040004.201505171336_amd64.deb
 
 sudo dpkg -i *.deb
 
