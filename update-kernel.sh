@@ -8,7 +8,9 @@ sudo dpkg -i *.deb
 # How to remove
 dpkg -l | grep "linux\-[a-z]*\-"
 #sudo apt-get remove KERNEL_PACKAGES_TO_REMOVE
-sudo aptitude purge KERNEL_PACKAGES_TO_REMOVE
+#sudo aptitude purge KERNEL_PACKAGES_TO_REMOVE
+#sudo aptitude purge linux-headers-4.0.0-040000 linux-headers-4.0.0-040000-generic linux-image-4.0.0-040000-generic
+#sudo aptitude purge linux-headers-4.0.2-040002 linux-headers-4.0.2-040002-generic linux-image-4.0.2-040002-generic
 
 # ref.
 #   https://wiki.ubuntu.com/Kernel/MainlineBuilds?action=show&redirect=KernelMainlineBuilds
