@@ -8,3 +8,5 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
 sudo dpkg -i vagrant_1.7.2_x86_64.deb
 # ref. http://blog.glidenote.com/blog/2013/12/05/digital-ocean-with-vagrant/
 vagrant plugin install vagrant-digitalocean
+# ref. http://qiita.com/mountcedar/items/353e615a618ad1fc4ec4
+vagrant plugin install dotenv
