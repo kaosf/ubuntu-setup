@@ -10,3 +10,7 @@ sudo aptitude install -y mongodb-org
 # ref. http://te2u.hatenablog.jp/entry/2013/02/06/222342
 echo "smallfiles = true" | sudo tee -a /etc/mongodb.conf
 sudo service mongod restart
+
+# Disable autostart
+# ref. http://askubuntu.com/questions/468241/how-can-i-ensure-a-service-is-disabled-on-boot
+echo manual | sudo tee /etc/init/mongod.override
