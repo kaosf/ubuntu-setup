@@ -9,7 +9,6 @@ sudo dpkg -i *.deb
 dpkg -l | grep "linux\-[a-z]*\-"
 #sudo apt-get remove KERNEL_PACKAGES_TO_REMOVE
 #sudo aptitude purge KERNEL_PACKAGES_TO_REMOVE
-#sudo aptitude purge linux-headers-4.0.4-040004 linux-headers-4.0.4-040004-generic linux-image-4.0.4-040004-generic
 #sudo aptitude purge linux-headers-4.0.7-040007 linux-headers-4.0.7-040007-generic linux-image-4.0.7-040007-generic
 
 # ref.
