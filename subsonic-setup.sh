@@ -1,8 +1,8 @@
-sudo aptitude install openjdk-7-jdk
-wget 'http://downloads.sourceforge.net/project/subsonic/subsonic/4.9/subsonic-4.9.deb?r=&ts=1401204592&use_mirror=jaist' -O subsonic-4.9.deb
-sudo dpkg -i subsonic-4.9.deb
+sudo aptitude -y install openjdk-7-jdk
+wget 'http://subsonic.org/download/subsonic-5.2.1.deb'
+sudo dpkg -i subsonic-5.2.1.deb
 
-sudo aptitude install apache2
+sudo aptitude -y install apache2
 sudo a2enmod proxy_http
 cat <<EOF | sudo tee /etc/apache2/sites-available/subsonic.kaosfield.net.conf
 <VirtualHost *:80>
@@ -25,7 +25,7 @@ cat <<EOF | sudo tee /etc/apache2/sites-available/subsonic.kaosfield.net.conf
 </VirtualHost>
 EOF
 sudo a2ensite subsonic.kaosfield.net
-sudo apache2 restart
+sudo service apache2 restart
 
 # Backup
 # All music directories and "/var/subsonic" directory
