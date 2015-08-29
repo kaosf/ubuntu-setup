@@ -27,8 +27,7 @@ sudo aptitude install \
   libx11-dev libxt-dev libgtk2.0-dev
 mkdir -p $HOME/local/src
 cd $HOME/local/src
-# ref. https://github.com/vim-jp/vim
-git clone https://github.com/vim-jp/vim
+git clone https://github.com/vim/vim
 cd vim
 git checkout v7.4.838
 ./configure \
