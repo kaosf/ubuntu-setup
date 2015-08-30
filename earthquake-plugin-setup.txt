@@ -9,6 +9,9 @@
 # favstar (only to open favstar)
 :plugin_install https://gist.github.com/kaosf/9929128
 
+# twilog (only to open twilog)
+:plugin_install https://gist.github.com/7a13423e261c29403fe7
+
 # ka-aliases
 :plugin_install https://gist.github.com/kaosf/6037788
 
