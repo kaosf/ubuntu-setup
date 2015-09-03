@@ -29,7 +29,7 @@ mkdir -p $HOME/local/src
 cd $HOME/local/src
 git clone https://github.com/vim/vim
 cd vim
-git checkout v7.4.838
+git checkout v7.4.854
 ./configure \
   --prefix=$HOME/local \
   --enable-gui=gtk2 \
