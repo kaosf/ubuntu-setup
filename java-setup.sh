@@ -1,5 +1,5 @@
 # Java 7
-sudo aptitude install openjdk-7-jdk
+sudo apt-get -y install openjdk-7-jdk
 
 # Oracle Java 8
 # ref. http://askubuntu.com/questions/464755/how-to-install-openjdk-8-on-14-04-lts

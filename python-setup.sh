@@ -1,4 +1,4 @@
-sudo aptitude install python-pip
+sudo apt-get -y install python-pip
 
 # ref. https://bitbucket.org/mgemmill/bitbucket-cli
 sudo pip install bitbucket-cli

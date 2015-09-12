@@ -1,16 +1,16 @@
 # install SQLite3
-sudo aptitude install sqlite3 libsqlite3-dev
+sudo apt-get -y install sqlite3 libsqlite3-dev
 
 # dmd
 cd ~/local/src
 wget https://github.com/downloads/D-Programming-Language/dmd/dmd.2.059.zip
-sudo aptitude install unzip
+sudo apt-get -y install unzip
 unzip dmd.2.059.zip
 mv dmd2 ~/local/bin
 echo "export PATH=$HOME/local/bin/dmd2/linux/bin64:$PATH" >> ~/.zshenv
 
 # subversion
-sudo aptitude install subversion libapache2-svn
+sudo apt-get -y install subversion libapache2-svn
 sudo vim /etc/apache2/mods-enabled/dav_svn.conf
 ...
 + <Location /svn>
@@ -39,14 +39,14 @@ sudo svnadmin load myrepos < dumpfile # svnadmin dump myrepos > dumpfile # on so
 sudo chown -R www-data:www-data myrepos
 
 # hg
-sudo aptitude install mercurial
+sudo apt-get -y install mercurial
 
 # HandBrakeCLI
 # ref. https://launchpad.net/~stebbins/+archive/handbrake-releases
-sudo aptitude install python-software-properties # for "add-apt-repository"
+sudo apt-get -y install python-software-properties # for "add-apt-repository"
 sudo add-apt-repository ppa:stebbins/handbrake-releases
-sudo aptitude update
-sudo aptitude install handbrake-cli
+sudo apt-get -y update
+sudo apt-get -y install handbrake-cli
 
 # Lua
 cd $HOME/local/src

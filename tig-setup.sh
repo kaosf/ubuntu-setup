@@ -1,5 +1,5 @@
 # ref. https://github.com/jonas/tig/issues/39#issuecomment-4992269
-sudo aptitude install automake libncurses5-dev libncursesw5-dev
+sudo apt-get -y install automake libncurses5-dev libncursesw5-dev
 mkdir -p $HOME/local/src
 cd $HOME/local/src
 git clone https://github.com/jonas/tig

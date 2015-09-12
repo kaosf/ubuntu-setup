@@ -1,6 +1,6 @@
 sudo add-apt-repository ppa:klaus-vormweg/awesome
-sudo apt-get update
-sudo apt-get install awesome
+sudo apt-get -y update
+sudo apt-get -y install awesome
 
 # Default configuration files
 mkdir -p $HOME/.config/awesome

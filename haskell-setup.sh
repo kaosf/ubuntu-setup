@@ -1,4 +1,4 @@
-sudo aptitude install haskell-platform
+sudo apt-get -y install haskell-platform
 
 echo 'export PATH=$HOME/.cabal/bin:$PATH' >> $HOME/.zshenv
 source $HOME/.zshenv

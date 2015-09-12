@@ -1,7 +1,7 @@
 # for +lua +clipboard
-sudo aptitude install vim-gtk
+sudo apt-get -y install vim-gtk
 # or only +lua
-#sudo aptitude install vim-nox
+#sudo apt-get -y install vim-nox
 
 # install NeoBundle
 [ -d $HOME/.vim/bundle ] || mkdir -p $HOME/.vim/bundle
@@ -19,7 +19,7 @@ cd $HOME/.vim/bundle/vimproc
 make
 
 ## Build by myself
-sudo aptitude install \
+sudo apt-get -y install \
   lua5.2 liblua5.2-dev luajit libluajit-5.1-2 libluajit-5.1-dev \
   libperl-dev \
   libpython-dev libpython3-dev \
@@ -46,7 +46,7 @@ make
 make install
 
 # Without X
-sudo aptitude install \
+sudo apt-get -y install \
   lua5.2 liblua5.2-dev luajit libluajit-5.1-2 libluajit-5.1-dev \
   libperl-dev \
   libpython-dev libpython3-dev \

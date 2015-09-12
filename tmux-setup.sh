@@ -1,5 +1,4 @@
-sudo aptitude install libevent-dev libncurses-dev
-#sudo aptitude install libevent-dev libncurses5-dev
+sudo apt-get -y install libevent-dev libncurses-dev
 
 mkdir -p $HOME/local/src
 cd $HOME/local/src

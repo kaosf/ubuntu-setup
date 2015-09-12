@@ -9,7 +9,7 @@
 # libsqlite3-dev for SQLite3
 # postgresql-server-dev-9.3 for PostgreSQL 9.3
 # libxslt1-dev libxml2-dev for nokogiri
-sudo aptitude install zlib1g-dev libssl-dev libreadline6-dev libffi-dev \
+sudo apt-get -y install zlib1g-dev libssl-dev libreadline6-dev libffi-dev \
   libsqlite3-dev \
   postgresql-server-dev-9.3 \
   libxslt1-dev libxml2-dev
@@ -29,14 +29,14 @@ rbenv rehash
 
 # For ruby-ldap
 # ref. https://github.com/bearded/ruby-ldap/issues/7
-sudo aptitude install libldap2-dev libsasl2-dev
+sudo apt-get -y install libldap2-dev libsasl2-dev
 # For rmagic
-sudo aptitude install libmagickwand-dev
+sudo apt-get -y install libmagickwand-dev
 locate MagickCore.pc # To find /usr/lib/x86_64-linux-gnu/pkgconfig
 PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig \
   gem install rmagick -v 2.13.3
 # For filemagic
-sudo aptitude install libmagic-dev
+sudo apt-get -y install libmagic-dev
 
 # heroku toolbelt
 # ref. https://toolbelt.heroku.com/

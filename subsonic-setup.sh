@@ -1,8 +1,8 @@
-sudo aptitude -y install openjdk-7-jdk
+sudo apt-get -y install openjdk-7-jdk
 wget 'http://subsonic.org/download/subsonic-5.2.1.deb'
 sudo dpkg -i subsonic-5.2.1.deb
 
-sudo aptitude -y install apache2
+sudo apt-get -y install apache2
 sudo a2enmod proxy_http
 cat <<EOF | sudo tee /etc/apache2/sites-available/subsonic.kaosfield.net.conf
 <VirtualHost *:80>

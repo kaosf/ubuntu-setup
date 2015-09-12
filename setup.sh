@@ -18,6 +18,6 @@ mkdir -p $HOME/local/src
 mkdir -p $HOME/local/bin
 echo 'export PATH=$HOME/local/bin:$PATH' >> $HOME/.zshenv
 # samba
-sudo aptitude install cifs-utils
+sudo apt-get -y install cifs-utils
 # 7-Zip
-sudo aptitude install p7zip-full
+sudo apt-get -y install p7zip-full

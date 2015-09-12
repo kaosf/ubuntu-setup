@@ -4,7 +4,7 @@
 # Passenger + Nginx
 gem install passenger --no-ri --no-rdoc
 rbenv rehash
-sudo aptitude -y install libcurl4-openssl-dev
+sudo apt-get -y install libcurl4-openssl-dev
 export ORIG_PATH="$PATH"
 sudo -s -E
 export PATH="$ORIG_PATH"

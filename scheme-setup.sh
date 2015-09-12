@@ -1,1 +1,1 @@
-sudo aptitude install gauche
+sudo apt-get -y install gauche

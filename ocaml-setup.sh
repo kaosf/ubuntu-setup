@@ -1,2 +1,2 @@
 # ref. https://ocaml.org/docs/install.html
-sudo aptitude install ocaml opam
+sudo apt-get -y install ocaml opam
