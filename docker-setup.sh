@@ -13,3 +13,7 @@ sudo service docker restart
 #   http://askubuntu.com/questions/477551/how-can-i-use-docker-without-sudo
 #   http://docs.docker.com/installation/ubuntulinux/#giving-non-root-access
 #   http://qiita.com/itiut@github/items/85a473059fceab7f7159
+
+# Disable autostart
+# ref. http://askubuntu.com/questions/468241/how-can-i-ensure-a-service-is-disabled-on-boot
+echo manual | sudo tee /etc/init/docker.override
