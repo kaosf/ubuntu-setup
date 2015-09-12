@@ -17,6 +17,7 @@ touch $HOME/.zshenv && chmod 600 $HOME/.zshenv
 mkdir -p $HOME/local/src
 mkdir -p $HOME/local/bin
 echo 'export PATH=$HOME/local/bin:$PATH' >> $HOME/.zshenv
+echo 'export PATH=$HOME/local/bin:$PATH' >> $HOME/.profile
 # samba
 sudo apt-get -y install cifs-utils
 # 7-Zip
