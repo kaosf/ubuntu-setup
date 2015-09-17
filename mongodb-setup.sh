@@ -1,9 +1,6 @@
 # ref. http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-
-echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
-# ref. http://d.hatena.ne.jp/yutakikuchi/20111013/1318436872
-
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
 sudo apt-get -y update
 sudo apt-get -y install mongodb-org
 
