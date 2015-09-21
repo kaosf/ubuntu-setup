@@ -1,11 +1,10 @@
-sudo add-apt-repository ppa:klaus-vormweg/awesome
-sudo apt-get -y update
+sudo add-apt-repository -y ppa:klaus-vormweg/awesome
+sudo apt-get update
 sudo apt-get -y install awesome
 
-# Default configuration files
-mkdir -p $HOME/.config/awesome
-cp /etc/xdg/awesome/rc.lua $HOME/.config/awesome
-# Default theme: /usr/share/awesome/themes/default/theme.lua
+# Default configuration files:
+#   /etc/xdg/awesome/rc.lua
+#   /usr/share/awesome/themes/default/theme.lua
 
 # ref.
 #   http://tanitta.hatenablog.com/entry/2014/11/25/010006
