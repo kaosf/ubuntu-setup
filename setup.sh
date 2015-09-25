@@ -12,6 +12,10 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get -y update
 sudo apt-get -y install aptitude zsh vim git curl build-essential automake
 chsh -s /usr/bin/zsh
+wget 'http://downloads.sourceforge.net/project/zsh/zsh/5.0.2/zsh-5.0.2.tar.bz2?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fzsh%2Ffiles%2Fzsh%2F5.0.2%2F&ts=1443201854&use_mirror=jaist'
+tar xf zsh-5.0.2.tar.bz2
+sudo cp zsh-5.0.2/Doc/*.1 /usr/share/man/man1
+rm -rf zsh-5.0.2*
 touch $HOME/.zshenv && chmod 600 $HOME/.zshenv
 # for local install
 mkdir -p $HOME/local/src
