@@ -4,7 +4,7 @@
 # curl -L git.io/nodebrew | perl - setup
 wget git.io/nodebrew -O - | perl - setup
 echo 'export PATH=$HOME/.nodebrew/current/bin:$PATH' >> $HOME/.zshenv
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+exec $SHELL -l
 
 # nodebrew help
 # nodebrew ls-all
