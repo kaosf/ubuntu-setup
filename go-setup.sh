@@ -16,6 +16,7 @@ export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/.gocode
 export PATH=$HOME/.gocode/bin:$PATH
 rm -f go${VERSION}.linux-amd64.tar.gz
+exec $SHELL
 
 # ref. https://github.com/heroku/hk#mac-os-x-linux-bsd
 L=$HOME/local/bin/hk && curl -sL -A "`uname -sp`" https://hk.heroku.com/hk.gz | zcat >$L && chmod +x $L
