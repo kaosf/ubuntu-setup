@@ -4,7 +4,7 @@ else
   sudo apt-get -y install libevent-dev libncurses-dev
   sudo apt-get -y remove tmux
 fi
-wget http://downloads.sourceforge.net/tmux/tmux-2.0.tar.gz
+wget https://github.com/tmux/tmux/releases/download/2.0/tmux-2.0.tar.gz
 tar xzf tmux-2.0.tar.gz
 rm -f tmux-2.0.tar.gz
 cd tmux-2.0
