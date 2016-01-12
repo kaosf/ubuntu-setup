@@ -14,9 +14,10 @@ wget https://raw.githubusercontent.com/kaosf/ubuntu-setup/master/unsecure-root-s
 
 Following scripts are not @kaosf 's work. Thanks a lot to his/her contributions!
 
-- [@prashantrar - GitHub](https://github.com/prashantrar)
-    - `install-PAPI-5.4.1.sh`
-    - `install-python-pip.sh`
+By @prashantrar ([GitHub](https://github.com/prashantrar), [Bitbucket](https://bitbucket.org/prashantrar))
+
+- `install-PAPI-5.4.1.sh`
+- `install-python-pip.sh`
 
 ## License
 
