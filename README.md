@@ -1,6 +1,6 @@
-# Ubuntu Setup Memo
+# Ubuntu Setup Note
 
-This memo is for Ubuntu version
+This note is for Ubuntu version
 
 * 14.04 amd64
 
