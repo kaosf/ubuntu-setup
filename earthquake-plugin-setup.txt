@@ -4,13 +4,13 @@
 # ref.
 #   https://github.com/jugyo/earthquake
 #   https://gist.github.com/jugyo/899506
-:plugin_install https://gist.github.com/899506
+:plugin_install https://gist.github.com/kaosf/899506
 
 # favstar (only to open favstar)
 :plugin_install https://gist.github.com/kaosf/9929128
 
 # twilog (only to open twilog)
-:plugin_install https://gist.github.com/7a13423e261c29403fe7
+:plugin_install https://gist.github.com/kaosf/7a13423e261c29403fe7
 
 # ka-aliases
 :plugin_install https://gist.github.com/kaosf/6037788
@@ -20,3 +20,6 @@
 
 # autohash
 :plugin_install https://gist.github.com/kaosf/6217906
+
+# notifications
+:plugin_install https://gist.github.com/kaosf/ead38bcf85be48d1723e
