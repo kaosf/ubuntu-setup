@@ -3,6 +3,10 @@ sudo apt-get -y install fontforge
 cd
 git clone git://github.com/yascentur/Ricty.git
 cd Ricty
+# Commit hash: 736be74127d97f9b653258e01bf82cc55e2468c4
+#git checkout 736be74127d97f9b653258e01bf82cc55e2468c4
+# or
+#git checkout 4.0.1
 
 # # Pattern 1
 # wget http://levien.com/type/myfonts/Inconsolata.otf
