@@ -3,15 +3,11 @@ sudo apt-get -y install vim-gtk
 # or only +lua
 #sudo apt-get -y install vim-nox
 
-# install NeoBundle
-[ -d $HOME/.vim/bundle ] || mkdir -p $HOME/.vim/bundle
-git clone git://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
-
-# execute :NeoBundleInstall in Vim command mode
-# execute :NeoBundleUpdate to update
-# execute :NeoBundleClean to cleaning
-
-# setup ka-vim-snippets
+# install dein.vim and ka-vim-sinppets
+if [ ! -d $HOME/.vim/dein ]; then
+  curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh | bash -s $HOME/.vim/dein
+fi
+# execute :call dein#install() in Vim command mode
 git clone git://github.com/kaosf/ka-vim-snippets.git $HOME/.vim/ka-vim-snippets
 
 # setup vimproc
