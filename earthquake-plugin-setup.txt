@@ -4,7 +4,7 @@
 # ref.
 #   https://github.com/jugyo/earthquake
 #   https://gist.github.com/jugyo/899506
-:plugin_install https://gist.github.com/kaosf/899506
+:plugin_install https://gist.github.com/jugyo/899506
 
 # favstar (only to open favstar)
 :plugin_install https://gist.github.com/kaosf/9929128
