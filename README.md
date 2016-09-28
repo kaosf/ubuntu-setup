@@ -3,6 +3,7 @@
 This note is for Ubuntu version
 
 * 14.04 amd64
+* 16.04 amd64
 
 ## Usage
 
