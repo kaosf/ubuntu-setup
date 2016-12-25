@@ -1,19 +1,30 @@
-# ref. http://askubuntu.com/a/473720
-wget -qO- https://get.docker.io/gpg | sudo apt-key add -
-sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
-sudo apt-get -y update
-sudo apt-get -y install lxc-docker-1.7.1
+# ref. https://docs.docker.com/engine/installation/linux/ubuntulinux/
+sudo apt -y install apt-transport-https ca-certificates
+sudo apt-key adv \
+  --keyserver hkp://ha.pool.sks-keyservers.net:80 \
+  --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
+sudo apt update
+sudo apt -y install linux-image-extra-$(uname -r) linux-image-extra-virtual
+sudo apt -y install docker-engine
+
+sudo systemctl start docker.service
 
 ## Giving non-root access
-sudo groupadd docker
 sudo gpasswd -a `whoami` docker
 # logout and login
-sudo service docker restart
 # ref.
 #   http://askubuntu.com/questions/477551/how-can-i-use-docker-without-sudo
 #   http://docs.docker.com/installation/ubuntulinux/#giving-non-root-access
 #   http://qiita.com/itiut@github/items/85a473059fceab7f7159
 
-# Disable autostart
-# ref. http://askubuntu.com/questions/468241/how-can-i-ensure-a-service-is-disabled-on-boot
-echo manual | sudo tee /etc/init/docker.override
+## Make NOT to ignore the firewall
+# ref.
+#   http://qiita.com/yakumo/items/07f0472c34299524e662
+#   http://askubuntu.com/questions/652556/uncomplicated-firewall-ufw-is-not-blocking-anything-when-using-docker
+cat <<EOF | sudo tee /etc/docker/daemon.json
+{
+  "iptables": false
+}
+EOF
+sudo systemctl restart docker.service
