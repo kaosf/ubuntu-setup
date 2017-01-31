@@ -1,15 +1,15 @@
 sudo apt -y install apache2 apache2-utils
 cat <<EOF | sudo tee /etc/apache2/sites-available/default.conf
 <VirtualHost *:80>
-  ServerName kaosfield.net
+  ServerName my.domain.com
 
   ProxyRequests Off
   <Proxy *>
     Require all granted
   </Proxy>
 
-  ProxyPass / http://ka-ring.herokuapp.com/
-  ProxyPassReverse / http://ka-ring.herokuapp.com/
+  ProxyPass / http://myherokuappname.herokuapp.com/
+  ProxyPassReverse / http://myherokuappname.herokuapp.com/
 </VirtualHost>
 EOF
 sudo a2enmod proxy_http
