@@ -1,4 +1,4 @@
-VERSION=2.2
+VERSION=2.3
 if [[ $1 = local ]]; then
   echo 'Build "libevent-dev" and "libncurses-dev".' >&2
 else
