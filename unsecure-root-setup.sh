@@ -3,6 +3,7 @@ NAME=$1
 groupadd $NAME
 cp -r /etc/skel /home/$NAME
 useradd $NAME -g $NAME -s /bin/bash -d /home/$NAME
+apt-get -y install sudo
 echo "${NAME} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 mkdir /home/${NAME}/.ssh
 cp .ssh/authorized_keys /home/${NAME}/.ssh/
