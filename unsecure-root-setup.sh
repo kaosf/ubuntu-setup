@@ -9,5 +9,7 @@ mkdir /home/${NAME}/.ssh
 cp .ssh/authorized_keys /home/${NAME}/.ssh/
 chown ${NAME}:${NAME} -R /home/${NAME}
 chmod 600 /home/${NAME}/.ssh/authorized_keys
-sed 's/PermitRootLogin yes/PermitRootLogin no/' -i /etc/ssh/sshd_config
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.orig
+echo 'PermitRootLogin no' > /etc/ssh/sshd_config
+cat /etc/ssh/sshd_config.orig >> /etc/ssh/sshd_config
 service ssh restart
