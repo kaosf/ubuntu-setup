@@ -46,7 +46,7 @@ sudo apt-get -y install mercurial
 #sudo apt-get -y install python-software-properties # for "add-apt-repository"
 sudo apt-get -y install software-properties-common # for "add-apt-repository"
 sudo add-apt-repository ppa:stebbins/handbrake-releases
-sudo apt-get -y update
+sudo apt-get update
 sudo apt-get -y install handbrake-cli
 
 # Lua

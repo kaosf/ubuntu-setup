@@ -1,4 +1,4 @@
-sudo apt-get -y -q update
+sudo apt-get -q update
 sudo apt-get -y -q upgrade
 # Force to fix locale configurations to "en_US.UTF-8"
 sudo locale-gen en_US en_US.UTF-8
@@ -9,7 +9,7 @@ sudo reboot
 # Some packages needed at least
 sudo apt-get -y install software-properties-common
 sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get -y update
+sudo apt-get update
 sudo apt-get -y install aptitude zsh vim git curl build-essential automake
 chsh -s /usr/bin/zsh
 wget 'http://downloads.sourceforge.net/project/zsh/zsh/5.0.2/zsh-5.0.2.tar.bz2?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fzsh%2Ffiles%2Fzsh%2F5.0.2%2F&ts=1443201854&use_mirror=jaist'
