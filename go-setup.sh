@@ -1,6 +1,6 @@
 sudo add-apt-repository -y ppa:ubuntu-lxc/lxd-stable
-sudo apt update
-sudo apt -y install golang
+sudo apt-get update
+sudo apt-get -y install golang
 
 export GOPATH=$HOME/.go
 export PATH=$HOME/.go/bin:$PATH

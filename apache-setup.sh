@@ -1,4 +1,4 @@
-sudo apt -y install apache2 apache2-utils
+sudo apt-get -y install apache2 apache2-utils
 cat <<EOF | sudo tee /etc/apache2/sites-available/default.conf
 <VirtualHost *:80>
   ServerName my.domain.com
