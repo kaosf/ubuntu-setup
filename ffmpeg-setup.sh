@@ -1,7 +1,11 @@
-sudo apt-get -y install software-properties-common
-sudo add-apt-repository ppa:mc3man/trusty-media
-sudo apt-get update
-# Press ENTER to continue
+wget http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz
+tar xvf ffmpeg-release-64bit-static.tar.xz
+sudo cp ./ffmpeg-*.*.*-64bit-static/ffmpeg /usr/local/bin
+sudo cp ./ffmpeg-*.*.*-64bit-static/ffprobe /usr/local/bin
+rm -rf ./ffmpeg-*.*.*-64bit-static ffmpeg-release-64bit-static.tar.xz
 
-sudo apt-get -y install ffmpeg
-# ref. http://d.hatena.ne.jp/katz_24/20160323/1458784199
+# Option
+# sudo apt-get install nscd
+
+# ref. https://www.johnvansickle.com/ffmpeg/
+# ref. http://qiita.com/yayugu/items/d7f6a15a6f988064f51c
