@@ -18,6 +18,10 @@ yes | sdkmanager 'build-tools;27.0.1'
 yes | sdkmanager 'extras;android;m2repository'
 # ... and more as you like
 
+# How to check "sdkmanager '<here>'":
+sdkmanager --list --verbose | grep -vP "^Info:|^\s|^$|^done$"
+# ref. https://stackoverflow.com/a/42521077/1006253
+
 # Install dependent packages for 64bit
 # ref.
 #   http://qiita.com/nichijo/items/773403a4bac7180a26ab
