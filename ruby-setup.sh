@@ -33,7 +33,7 @@ rbenv rehash
 # ref. https://github.com/bearded/ruby-ldap/issues/7
 sudo apt-get -y install libldap2-dev libsasl2-dev
 # For rmagic
-sudo apt-get -y install libmagickwand-dev
+sudo apt-get -y install imagemagick libmagickwand-dev
 locate MagickCore.pc # To find /usr/lib/x86_64-linux-gnu/pkgconfig
 PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig \
   gem install rmagick -v 2.13.3
