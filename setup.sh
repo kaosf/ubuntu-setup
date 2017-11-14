@@ -5,6 +5,7 @@ sudo locale-gen en_US en_US.UTF-8
 sudo dpkg-reconfigure locales
 echo 'LC_ALL=en_US.UTF-8' | sudo tee -a /etc/environment
 echo 'LANG=en_US.UTF-8'   | sudo tee -a /etc/environment
+sudo ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 sudo reboot
 # Some packages needed at least
 sudo apt-get -y install software-properties-common
