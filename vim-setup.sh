@@ -14,6 +14,10 @@ git clone git://github.com/kaosf/ka-vim-snippets.git $HOME/.vim/ka-vim-snippets
 cd $HOME/.vim/bundle/vimproc
 make
 
+# Install Python 3 "neovim" package
+sudo apt-get -y install python3-pip
+pip3 install --user neovim
+
 ## Build by myself
 sudo apt-get -y install \
   lua5.2 liblua5.2-dev luajit libluajit-5.1-2 libluajit-5.1-dev \
