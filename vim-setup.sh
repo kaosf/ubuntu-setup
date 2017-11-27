@@ -23,14 +23,29 @@ sudo apt-get -y install \
   libx11-dev libxt-dev libgtk2.0-dev
 mkdir -p $HOME/local/src
 cd $HOME/local/src
-git clone https://github.com/vim/vim
-cd vim
-git checkout v7.4.854
+if [ -d vim ]; then
+  cd vim
+  git fetch origin
+else
+  git clone https://github.com/vim/vim
+  cd vim
+fi
+VERSION=`git tag -l | sort --version-sort | tail -1`
+git checkout $VERSION
+NAME=`git config user.name`
+if [ $? != 0 -o -z $NAME ]; then
+  NAME=`whoami`
+fi
+EMAIL=`git config user.email`
+if [ $? != 0 -o -z $EMAIL ]; then
+  EMAIL=${NAME}@`hostname`
+fi
 ./configure \
+  --with-compiledby="${NAME} <${EMAIL}>" \
   --prefix=$HOME/local \
   --enable-gui=gtk2 \
   --enable-perlinterp=yes \
-  --enable-pythoninterp=yes \
+  --enable-python3interp=yes \
   --enable-rubyinterp \
   --enable-luainterp=yes \
   --enable-multibyte \
@@ -47,17 +62,38 @@ sudo apt-get -y install \
   libperl-dev \
   libpython-dev libpython3-dev \
   ruby ruby-dev
-# ...
+mkdir -p $HOME/local/src
+cd $HOME/local/src
+if [ -d vim ]; then
+  cd vim
+  git fetch origin
+else
+  git clone https://github.com/vim/vim
+  cd vim
+fi
+VERSION=`git tag -l | sort --version-sort | tail -1`
+git checkout $VERSION
+NAME=`git config user.name`
+if [ $? != 0 -o -z $NAME ]; then
+  NAME=`whoami`
+fi
+EMAIL=`git config user.email`
+if [ $? != 0 -o -z $EMAIL ]; then
+  EMAIL=${NAME}@`hostname`
+fi
 ./configure \
+  --with-compiledby="${NAME} <${EMAIL}>" \
   --prefix=$HOME/local \
   --enable-perlinterp=yes \
-  --enable-pythoninterp=yes \
+  --enable-python3interp=yes \
   --enable-rubyinterp \
   --enable-luainterp=yes \
   --enable-multibyte \
   --enable-fail-if-missing \
   --with-features=huge \
   --with-luajit
+make
+make install
 
 ## Update
 cd vim
