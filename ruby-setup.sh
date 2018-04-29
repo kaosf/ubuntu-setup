@@ -20,8 +20,8 @@ eval "$(rbenv init -)"
 mkdir -p $HOME/.rbenv/plugins
 git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
 git clone https://github.com/ianheggie/rbenv-binstubs.git $HOME/.rbenv/plugins/rbenv-binstubs
-rbenv install 2.3.1
-rbenv global 2.3.1
+rbenv install 2.5.1
+rbenv global 2.5.1
 rbenv rehash
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
