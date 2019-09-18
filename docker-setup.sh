@@ -39,3 +39,9 @@ cat <<EOF | sudo tee /etc/docker/daemon.json
 }
 EOF
 sudo systemctl restart docker.service
+
+###
+# docker-machine
+curl -L https://github.com/docker/machine/releases/download/v0.7.0/docker-machine-`uname -s`-`uname -m` | sudo tee /usr/local/bin/docker-machine && \
+sudo chmod +x /usr/local/bin/docker-machine
+# ref. http://docs.docker.jp/machine/install-machine.html
