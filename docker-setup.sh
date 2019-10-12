@@ -51,3 +51,16 @@ sudo chmod +x /usr/local/bin/docker-compose
 curl -L https://github.com/docker/machine/releases/download/v0.7.0/docker-machine-`uname -s`-`uname -m` | sudo tee /usr/local/bin/docker-machine && \
 sudo chmod +x /usr/local/bin/docker-machine
 # ref. http://docs.docker.jp/machine/install-machine.html
+
+###
+# Kubernetes
+# ref. https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-linux
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+# Minikube
+# ref. https://kubernetes.io/docs/tasks/tools/install-minikube/
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
+sudo mkdir -p /usr/local/bin/
+sudo install minikube /usr/local/bin/
+rm minikube
