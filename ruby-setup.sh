@@ -8,8 +8,7 @@
 # zlib1g-dev libssl-dev libreadline6-dev are needed to build
 # libsqlite3-dev for SQLite3
 # libxslt1-dev libxml2-dev for nokogiri
-sudo apt-get -y install zlib1g-dev libssl-dev libreadline6-dev libffi-dev \
-  libsqlite3-dev libxslt1-dev libxml2-dev
+sudo apt-get -y install zlib1g-dev libssl-dev libreadline6-dev libffi-dev libsqlite3-dev libxslt1-dev libxml2-dev
 
 git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $HOME/.bashrc
